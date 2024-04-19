@@ -200,7 +200,7 @@ h6 {
 /* Style for cart button */
 
 .cart-item{
-  background-color: #374546;
+  background-color:rgb(9 24 27);
   border: 1px solid aqua;
   align-items: center;
   max-width: 600px;
@@ -328,7 +328,7 @@ form {
   padding: 40px;
   margin: 0 auto;
   margin-bottom: 20px;
-  background-color: rgb(74, 75, 74);
+  background-color:rgb(9 24 27);
 }
 
 form div {
