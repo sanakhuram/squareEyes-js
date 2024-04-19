@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Description" content="This page is desitined to provide information about the Video seleted.">
-    <title>ToyStory</title>
-    <link rel="stylesheet" href="src/css/watchnow.css">
-</head>
-<div class="center-container">
-    <div class="outside-wrapper">
-      <header class="header-wrapper"> 
-        <div class="links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#SignIn">Sign In</a></li>
-          <li><a href="AboutUs">About Us</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This page is desitined to provide information about the Video seleted."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SquareEyes | WatchNow</title>
+    <link rel="stylesheet" href="src/css/watchnow.css" />
+  </head>
+  <body class="center">
+    <div class="center-container">
+      <div class="outside-wrapper">
+        <header class="header-wrapper">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html#about-us">About Us</a></li>
+              <li><a href="AboutUs.html">Log In</a></li>
+              <li><a href="cart.html" class="cart-count">Cart (0)</a>
+                <div class="dropdown-content">
+                  <div id="cart-item"></div>
+                  <div id="cart-total"></div>
+              </div></li>
+              
+            </ul>
+            <div class="bottom-options">
+              <button class="subscribe-button">Subscribe</button>
+              <p>
+                <img
+                  src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"
+                  alt="icons-leading-Socialmedia"
+                />
+              </p>
+            </div>
+          </nav>
+          <div class="links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">Sign In</a></li>
+              <li><a href="AboutUs.html#about-us">About Us</a></li>
+            </ul>
+          </div>
+          <div class="header-content">
+            <a href="index.html">
+              <img
+                src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png"
+                alt="SquareEyes_ Connectingfilmlovers"
+              />
+            </a>
+          </div>
+        </header>
+        <div id="movie-details"></div>
+        <!-------
+        <div class="image-container">
+          <img
+            src="assets/images/toystory-watch-now(1).png"
+            alt="Movie-Icon-Toy-Story-2019"
+            class="movie-icon"
+          />
+          <img
+            src="assets/Toystory-Cover.png"
+            alt="Toy-Story-Cover-image"
+            class="movie-cover"
+          />
         </div>
-        <div class="header-content">
-       <img src="/assets/images/SquareEyes_Logo 4.png" alt="SquareEyes_Logo" class="logo">
+        <div class="buttons-container">
+          <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
+          <button class="add-to-watchlist-button">Add to Watchlist</button>
         </div>
-      </header>
-    <body class="center">
-      <main class="main-wrapper">
-        <nav>
-        <ul class="left-items">
-        <li>New Release</li>
-        <li>Discover</li>
-        <li>Recommendations</li>
-        <li>Advance Search</li>
-      </ul>
-      <ul class="right-items">
-         <li><img src="assets/images/icons/74a255c9-677c-410d-bcf8-ef17440e2268.png" alt="Home Icon"> <span>Home</span></li>
-        <li><img src="assets/images/icons/d5e1df80-b0f6-4abe-86cc-658bf6d7d7af.png" alt="Cart Icon"> <span>Cart</span></li>
-        <li><img src="assets/images/icons/e3958636-1462-4585-bb85-afd70afe0d45.png" alt="Watchlist Icon"> <span>Watchlist</span></li>
-        </ul>
-      </nav>
-      <div class="image-container">
-        <img src="assets/images/Toystory-Cover.png" alt="Toy-Story-Cover">
+        <div class="descirption-container">
+          <h1 class="right-aligned">Price 149NOK</h1>
+          <h1 class="left-aligned">Toy Story 4<br />2019<br /></h1>
+          <p>
+            Josh Cooley's directorial debut takes the helm in the fourth
+            installment of Pixar's renowned Toy Story series. This animated
+            adventure reunites audiences with the cherished characters,
+            including the iconic voices of Tom Hanks, Tim Allen, and Tony Hale.
+            The beloved toys, led by Woody and Buzz Lightyear, now find
+            themselves in the care of Bonnie Anderson, a young girl whose
+            imaginative play introduces a delightful but unconventional addition
+            to the toy box. A significant twist unfolds as Bonnie transforms a
+            simple spork into a sentient toy named Forky, who hilariously
+            grapples with his identity crisis, viewing himself more as a
+            disposable eating utensil than a plaything. As Toy Story 4 weaves
+            its narrative, Cooley and the talented voice cast guide us through a
+            tale of self-discovery, friendship, and the enduring magic of the
+            Toy Story legacy.
+          </p>
+        </div>
+        <div class="Characterstics-container">
+          <h2>Characteristics</h2>
+          <p>
+            Animation, antiques, doll, friend, mission [quest], road-trip, toys.
+          </p>
+        </div>--->
+        <footer class="footer-wrapper">
+          <div>
+            <nav>
+              <ul class="footer-list-1">
+                <li>Questions?Contact us.</li>
+                <li>FAQ</li>
+                <li>Help Center</li>
+                <li>Terms Of Use</li>
+                <li>Privacy Policy</li>
+              </ul>
+              <ul class="footer-list-2">
+                <li>About Us</li>
+                <li>Articles</li>
+                <li>Subscribe</li>
+              </ul>
+            </nav>
+            <h4>
+              Your personal data will be used only to process your order. For
+              more details, please see Privacy Policy
+            </h4>
+          </div>
+        </footer>
       </div>
-      <div class="buttons-container">
-  <a href="cart.html" class="add-to-watchlist-button">Add to Cart</a>
-  <button class="add-to-watchlist-button">Add to Watchlist</button>
-</div>
-<div class="descirption-container">
-  <h1>Toy Story 4<br>2019<br></h1>
-  <p>Director Josh Cooley’s debut feature film is the fourth instalment in Pixar’s Toy Story series,
-     which features the voice talents of Tom Hanks, Tim Allen, and Tony Hale. Woody,
-     Buzz and co. are now the possessions of a young girl named Bonnie Anderson, who introduces
-     a major complication into their lives when she turns a spork into a toy. Forky,
-     however, sees himself as an eating utensil.</p>
-</div>
-<div class="Characterstics-container">
- <h2>Characteristics</h2>
- <p>Animation, antiques, doll, friend, mission [quest], road-trip, toy</p>
-</div>
- </body>
-</main>
- <footer class="footer-wrapper">
-    <nav>
-    <ul class="footer-list-1">
-      <li>Questions?Contact us.</li>
-      <li>FAQ</li>
-      <li>Help Center</li>
-      <li>Terms Of Use</li>
-      <li>Privacy Policy</li>
-    </ul>
-    <ul class="footer-list-2">
-      <li>About Us</li>
-      <li>Articles</li>
-      <li>Subscribe</li>
-      <p><img src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"></p>
-    </ul> 
-  </nav>
-  <h4>Your personal data will be used only to process your order. For more details, please see Privacy Policy</h4>
-
-</footer>
-</div>
-
+    </div>
+    <script src="./js/watchnow.js"></script>
+  </body>
 </html>

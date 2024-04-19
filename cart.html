@@ -1,89 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Description" content="The page is entitled to show the items selected in the cart.">
-    <title>Shopping-cart</title>
-    <link rel="stylesheet" href="src/css/cart.css">
-</head>
-<div class="center-container">
-    <div class="outside-wrapper">
-      <header class="header-wrapper"> 
-        <div class="links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#SignIn">Sign In</a></li>
-          <li><a href="AboutUs">About Us</a></li>
-        </ul>
-        </div>
-        <div class="header-content">
-       <img src="/assets/images/SquareEyes_Logo 4.png" alt="SquareEyes_Logo" class="logo">
-        </div>
-      </header>
-    <body class="center">
-      <main class="main-wrapper">
-        <nav>
-        <ul class="left-items">
-        <li>New Release</li>
-        <li>Discover</li>
-        <li>Recommendations</li>
-        <li>Advance Search</li>
-      </ul>
-      <ul class="right-items">
-         <li><img src="assets/images/icons/74a255c9-677c-410d-bcf8-ef17440e2268.png" alt="Home Icon"> <span>Home</span></li>
-        <li><img src="assets/images/icons/d5e1df80-b0f6-4abe-86cc-658bf6d7d7af.png" alt="Cart Icon"> <span>Cart</span></li>
-        <li><img src="assets/images/icons/e3958636-1462-4585-bb85-afd70afe0d45.png" alt="Watchlist Icon"> <span>Watchlist</span></li>
-        </ul>
-      </nav>
-      <h1>Go Back to Collection</h1>
-      <button class="Check-out-button">Check Out</button>
-      <div class="movie-item">
-        <img src="assets/images/newReleaseToystory.png" alt="ToyStory">
-        <p>Toy Story 4 <br>Familie <br>2019 <br> 1 t, 40 min</p>
-        <button class="quantity-Button">1</button>
-        <p1>Nok 149.00</p1>
-      </div>
-      <div class="movie-item">
-        <img src="assets/images/NewreleaseAdamsFamily.png" alt="TheAdamsFamily">
-        <p>The Addams Family <br>Animation<br> 2019 <br> 1 t, 26 min</p>
-        <button class="quantity-Button">1</button> 
-         <p1>Nok 149.00</p1>
-      </div>
-      <button class="Card-Details-button">Card Details</button> 
-      <h2>Order Preview</h2>
-      <div class="orde-2">
-        <img src="assets/images/newReleaseToystory.png" alt="ToyStory">
-        <p>Toy Story 4 <br>Familie <br>2019 <br> 1 t, 40 min</p>
-        <button class="quantity-Button">1</button>
-        <p1>Nok 149.00</p1>
-      </div>
-      <div class="order-1">
-        <img src="assets/images/NewreleaseAdamsFamily.png" alt="TheAdamsFamily">
-        <p>The Addams Family <br>Animation<br> 2019 <br> 1 t, 26 min</p>
-        <button class="quantity-Button">1</button> 
-         <p1>Nok 149.00</p1>
-    <h3>Total Payment  -----  298.00NOK</h3>
-    <h4>ShippingFee   -----  0/-NOK</h4>
-    <button class="Place-Order-button">Place Order</button> 
-    <h5>Your personal data will be used only to process your order. For more details, please see Privacy Policy</h5>
-    </body>
-    <footer class="footer-wrapper">
-        <nav>
-        <ul class="footer-list-1">
-          <li>Questions?Contact us.</li>
-          <li>FAQ</li>
-          <li>Help Center</li>
-          <li>Terms Of Use</li>
-          <li>Privacy Policy</li>
-        </ul>
-        <ul class="footer-list-2">
-          <li>About Us</li>
-          <li>Articles</li>
-          <li>Subscribe</li>
-          <p><img src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"></p>
-        </ul> 
-      </nav>
-      <h6>Your personal data will be used only to process your order. For more details, please see Privacy Policy</h6>
-      </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The page is entitled to show the items selected in the cart."
+    />
+    <title>SquareEyes | Cart</title>
+    <link rel="stylesheet" href="src/css/cart.css" />
+  </head>
+  <body class="center">
+    <div class="center-container">
+      <div class="outside-wrapper">
+        <header class="header-wrapper">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html#about-us">About Us</a></li>
+              <li><a href="AboutUs.html">Sign In</a></li>
+              <li><a href="cart.html" class="cart-count">CART(0)</a></li>
+            </ul>
+            <div class="bottom-options">
+              <button class="subscribe-button" onclick="alert('You are now subscribed to SquareEyes')">Subscribe</button>
 
+              <p>
+                <img
+                  src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"
+                  alt="icons-leading-Socialmedia"
+                />
+              </p>
+            </div>
+          </nav>
+          <div class="links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">Sign In</a></li>
+              <li><a href="AboutUs.html#about-us">About Us</a></li>
+            </ul>
+          </div>
+          <div class="header-content">
+            <a href="index.html">
+              <img
+                src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png"
+                alt="SquareEyes_ Connectingfilmlovers"
+              />
+            </a>
+          </div>
+        </header>
+       <!---<button class="Shopping-Cart-button">Shopping Cart</button>
+        <div class="movie-item">
+          <img src="assets/images/newReleaseToystory.png" alt="ToyStory" />
+          <p>
+            Toy Story 4 <br />Familie <br />2019 <br />
+            1 t, 40 min
+          </p>
+          <button class="quantity-Button">1</button>
+          <p class="Price">149.00 NOK</p>
+        </div>
+        <div class="movie-item">
+          <img
+            src="assets/images/NewreleaseAdamsFamily.png"
+            alt="TheAdamsFamily"
+          />
+          <p>
+            The Addams Family <br />Animation<br />
+            2019 <br />
+            1 t, 26 min
+          </p>
+          <button class="quantity-Button">1</button>
+          <p class="Price">149.00 NOK</p>
+        </div>
+        <h3>Total Price<span class="line-between"></span> 298.00 NOK</h3>
+        <h4>VAT<span class="line-between"></span> 59.60 NOK</h4>
+        <button class="Card-Details-button">Card Details</button>
+        <h2>Order Preview</h2>
+        <div class="movie-item">
+          <img src="assets/images/newReleaseToystory.png" alt="ToyStory" />
+          <p>
+            Toy Story 4 <br />Familie <br />2019 <br />
+            1 t, 40 min
+          </p>
+          <span class="gap-between"></span>
+          <button class="items-Button">1</button>
+        </div>
+        <div class="movie-item">
+          <img
+            src="assets/images/NewreleaseAdamsFamily.png"
+            alt="TheAdamsFamily"
+          />
+          <p>
+            The Adams Family <br />Animation<br />
+            2019 <br />
+            1 t, 26 min
+          </p>
+          <span class="gap-between"></span>
+          <button class="items-Button">1</button>
+        </div>
+        <h3>Total Payment<span class="line-between"></span> 298.00NOK</h3>
+        <h4>ShippingFee<span class="line-between"></span> 0/-NOK</h4>
+        <a href="successpage.html" class="Place-Order-button">Place Order</a>
+        <h5>
+          Your personal data will be used only to process your order. For more
+          details, please see Privacy Policy
+        </h5>--->
+        <div class="loading">
+          <div class="loading-bar"></div>
+      </div>
+      <div class="cart-container">
+          <h2>Shopping Cart Details</h2>
+  
+          <div class="cart">
+              <div class="cart-list"></div>
+              <div class="total">Total:</div>
+             
+          </div>
+
+          <section class="form-container">
+            <form>
+                <h2>Contact Information</h2>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <h2>Delivery Information</h2>
+                <div>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                </div>
+                <div>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                </div>
+                <div>
+                    <label for="postcode">postcode:</label><br>
+                    <input type="text" id="postcode" name="postcode"><br>
+                </div>
+                <div>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div>
+                    <label for="country">Country</label><br>
+                    <input type="text" id="country" name="country">
+                </div>
+                <div>
+                    <button class="button">Submit</button>
+                </div>
+            </form>
+        </section>
+        <div class="payment-container">
+            <h2>Payment Method</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="paypal" name="payment" value="PayPal">
+                    <label for="paypal">PayPal Express Checkout</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="creditcard" name="payment" value="Credit Card">
+                    <label for="creditcard">Credit Card payment</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="applepay" name="payment" value="Apple Pay">
+                    <label for="applepay">Apple Pay payment</label>
+                </li>
+            </ul>
+            <div class="data-usage">
+                <p>Your personal data will be used to process your order, support your experience throughout this website,
+                    and for other purposes described in our <a href="/../html/Privacy&Terms.html"><strong> Policy</strong></a>.</p>
+                <p>Please ensure someone is able to sign for this parcel as all orders require a signature.</p>
+            </div>
+            <div class="terms-conditions">
+                <input type="checkbox" id="agree"><label for="agree">I have read and agree to the website <a
+                        href="../../html/Privacy&Terms.html"><strong>Terms and Conditions</strong></a>.</label>
+    
+            </div>
+        </div>
+        <div class="checkout-button-container">
+            <a href="successpage.html" class="checkout-button">Checkout</a>
+        </div>
+        <footer class="footer-wrapper">
+          <nav>
+            <ul class="footer-list-1">
+              <li>Questions?Contact us.</li>
+              <li>FAQ</li>
+              <li>Help Center</li>
+              <li>Terms Of Use</li>
+              <li>Privacy Policy</li>
+            </ul>
+            <ul class="footer-list-2">
+              <li>About Us</li>
+              <li>Articles</li>
+              <li>Subscribe</li>
+            </ul>
+          </nav>
+          <h6>
+            Your personal data will be used only to process your order. For more
+            details, please see Privacy Policy
+          </h6>
+        </footer>
+      </div>
+    </div>
+    <script src="./js/cart.js"></script>
+  </body>
 </html>

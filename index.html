@@ -1,132 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="This page contains Collection of high Quality videos right from the Makers.">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="src/css/styles.css">
-</head>
-<div class="center-container">
-<div class="outside-wrapper">
-  <header class="header-wrapper"> 
-    <div class="links">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#SignIn">Sign In</a></li>
-      <li><a href="AboutUs.html">About Us</a></li>
-    </ul>
-    </div>
-    <div class="header-content">
-   <img src="/assets/images/SquareEyes_Logo 4.png" alt="SquareEyes_Logo" class="logo">
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page contains Collection of high Quality videos right from the Makers."
+    />
+    <title>SquareEyes | Home</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
   <body class="center">
-  <main class="main-wrapper">
-    <nav>
-      <ul class="left-items">
-    <li>New Release</li>
-    <li>Discover</li>
-    <li>Recommendations</li>
-    <li>Advance Search</li>
-  </ul>
-  <ul class="right-items">
-     <li><img src="assets/images/icons/74a255c9-677c-410d-bcf8-ef17440e2268.png" alt="Home Icon"> <span>Home</span></li>
-    <li><img src="assets/images/icons/d5e1df80-b0f6-4abe-86cc-658bf6d7d7af.png" alt="Cart Icon"> <span>Cart</span></li>
-    <li><img src="assets/images/icons/e3958636-1462-4585-bb85-afd70afe0d45.png" alt="Watchlist Icon"> <span>Watchlist</span></li>
-    </ul>
-  </nav>
-  <div class="image-container">
-    <img src="assets/images/background-image.png" alt="Description of the image">
-    <div class="image-overlay">
-      <div class="text-container">
-      <h1>
-      Enjoy<br>
-      Hight-Quality Videos<br>
-      Now!!<br>
-      </h1>
-      </div>
-      <div class="right-item-container">
-      <a href="AboutUs.html" class="Sign-in-botton">Sign In</a>
-      <p>Don't have an Account? Sign up!</p>
+    <div class="center-container">
+      <div class="outside-wrapper">
+        <header class="header-wrapper">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html#about-us">About Us</a></li>
+              <li><a href="AboutUs.html">Log In</a></li>
+              <li><a href="cart.html">Cart(0)</a></li>
+              
+            </ul>
+            <div class="bottom-options">
+              <button class="subscribe-button" onclick="alert('You are now subscribed to SquareEyes')">Subscribe</button>
+ 
+              <p>
+                <img
+                  src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"
+                  alt="icons-leading-Socialmedia"
+                />
+              </p>
+            </div>
+          </nav>
+          <div class="links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">Sign In</a></li>
+              <li><a href="AboutUs.html#about-us">About Us</a></li>
+            </ul>
+          </div>
+          <div class="header-content">
+            <img
+              src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png"
+              alt="SquareEyes_ Connectingfilmlovers"
+            />
+          </div>
+        </header>
+        <main class="main-wrapper">
+          <div class="image-container">
+            <img
+              src="assets/images/cover-background.png"
+              alt="backgroundimage-of-movies"
+            />
+            <h1 class="heading-over-image">Enjoy<br> High Quality Movies<br> Now!</h1>
+              <div class="right-item-container">
+             
+            </div>
+          </div>
+        <h2>New Release</h2>
+          <div class="New-release">
+            <img
+              src="assets/images/NewreleaseAdamsFamily.png"
+              alt="Movie-Adams-Family-2019-family"
+            />
+            <img
+              src="assets/images/newReleaseToystory.png"
+              alt="Movie-toy-story-2019-family"
+            />
+            <img
+              src="assets/images/newreleaseGodzilla.png"
+              alt="Movie-Godzilla-2019-Fantasy"
+            />
+            <img
+              src="assets/images/NewreleaseScream.png"
+              alt="Movie-scream-2022-horror"
+            />
+            <img
+              src="assets/images/newreleaseOnceUponATime.png"
+              alt="Movie_Once-Upon-a-time-inHollywood-2019-Drama"
+            />
+            <img
+              src="assets/images/newrelaeseintothewoods.jpg"
+              alt="Movie-in"
+            />
+          </div>
+          <h3>Movie Collection</h3>
+          <div class="loading">Loading...</div>
+
+          <div class="movies"></div>
+          
+         <!-----<div class="movie-collection">
+            <div class="movie-item">
+              <img
+                src="assets/images/Toy-Story.jpg"
+                alt="Toy-story-movie-2019-family"
+              />
+              <p>Toy Story 4 (2019) Family, Animation, Adventure</p>
+              <a href="watchnow.html" class="watch-button">Watch Now</a>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/thebatman.jpg"
+                alt="Movie-Un-mask-the-truth-2022-Action"
+              />
+              <p>The Batman “unmask The Truth” (2022)Superhero, Action</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/SweetHeart.jpg"
+                alt="Movie-sweetheart-2019-Horror"
+              />
+              <p>SweetHeart "INTENCE2 (2019) Horror</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/Godzilla.jpg"
+                alt="Movie-Godzilla-2019-Fantasy"
+              />
+              <p>Godzilla: King of the Monsters (2019) Fantasy</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/Once-upon-a-time-in-hollywood.png"
+                alt="Movie_Once-Upon-a-time-inHollywood-2019-Drama"
+              />
+              <p>Once Upon a Time in Hollywood (2019) Drama</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/Into-the-woods.jpg"
+                alt="Movie-In-to-the-woods-2014-Family"
+              />
+              <p>Into The Woods (2014) Family ,Drama, Musical</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/scream.jpg"
+                alt="Movie-scream-2022-horror"
+              />
+              <p>Scream (2022) Horror, Thriller</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/hobbs&shaw.jpg"
+                alt="Movie-fastandfurious-2019-Drama"
+              />
+              <p>Fast & Furious : Hobbs & Shaw (2019) Drama</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="movie-item">
+              <img
+                src="assets/images/The-Adams-Family.jpg"
+                alt="Movie-Adams-Family-2019-family"
+              />
+              <p>The Adams Family (2019) Family</p>
+              <button class="watch-now-button">Watch Now</button>
+            </div>
+          </div>
+        </main>-->
+        <footer class="footer-wrapper">
+          <nav>
+            <ul class="footer-list-1">
+              <li>Questions?Contact us.</li>
+              <li>FAQ</li>
+              <li>Help Center</li>
+              <li>Terms Of Use</li>
+              <li>Privacy Policy</li>
+            </ul>
+            <ul class="footer-list-2">
+              <li>About Us</li>
+              <li>Articles</li>
+              <li>Subscribe</li>
+            </ul>
+          </nav>
+          <h4>
+            Your personal data will be used only to process your order. For more
+            details, please see Privacy Policy
+          </h4>
+        </footer>
       </div>
     </div>
-  </div>
-  <h2>New Release</h2>
-<div class="New-release">
-  <img src="assets/images/NewreleaseAdamsFamily.png" alt="Movie 1">
-  <img src="assets/images/newReleaseToystory.png" alt="Movie 2">
-  <img src="assets/images/newreleaseGodzilla.png" alt="Movie 3">
-  <img src="assets/images/NewreleaseScream.png" alt="Movie 4">
-  <img src="assets/images/newreleaseOnceUponATime.png" alt="Movie 5">
-</div>
-<h3>Movie Collection</h3>
-<div class="movie-collection">
-  <div class="movie-item">
-    <img src="assets/images/ToyStory.jpg" alt="Movie 5">
-    <p>Toy Story 4 (2019) Family</p>
-    <a href="watchnow.html" class="Sign-in-botton">Watch Now</a>
-    </div>
-  <div class="movie-item">
-  <img src="assets/images/thebatman.jpg" alt="Movie 1">
-  <p>The Batman “unmask The Truth” (2022)Superhero, Action</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/SweetHeart.jpg" alt="Movie 2">
-  <p>SweetHeart (2019) Horror</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/Godzilla.jpg" alt="Movie 3">
-  <p>Godzilla: King of the Monsters (2019) Fantasy</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/Once Upon a Time in Hollywood.jpg" alt="Movie 4">
-  <p>Once Upon a Time in Hollywood (2019) Drama</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/Into the woods.jpg" alt="Movie 6">
-  <p>Into The Woods (2014) Family</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/scream.jpg" alt="Movie 7">
-  <p>Scream (2022) Horror, Thriller</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/hobbs&shaw.jpg" alt="Movie 8">
-  <p>Fast & Furious : Hobbs & Shaw (2019) Drama</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-  <div class="movie-item">
-  <img src="assets/images/TheAdamsFamily.jpg" alt="Movie 9">
-  <p>The Adams Family (2019) Family</p>
-  <button class="watch-now-botton">Watch Now</button>
-  </div>
-</div>
-  </main>
-</body>
-  <footer class="footer-wrapper">
-    <nav>
-    <ul class="footer-list-1">
-      <li>Questions?Contact us.</li>
-      <li>FAQ</li>
-      <li>Help Center</li>
-      <li>Terms Of Use</li>
-      <li>Privacy Policy</li>
-    </ul>
-    <ul class="footer-list-2">
-      <li>About Us</li>
-      <li>Articles</li>
-      <li>Subscribe</li>
-      <p><img src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"></p>
-    </ul> 
-  </nav>
-  <h4>Your personal data will be used only to process your order. For more details, please see Privacy Policy</h4>
-  </footer>
-</div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
