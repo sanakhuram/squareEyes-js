@@ -12,7 +12,7 @@ const fetchMovies = async (url) => {
         }
     } catch (error) {
         console.error(error);
-        throw error; // Re-throw the error
+        throw error; 
     }
 };
 
