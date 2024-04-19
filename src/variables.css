@@ -1,0 +1,13 @@
+/* Use this file to store your useful variables */
+/* This could be colors, fonts, or padding sizes! */
+
+:root {
+  --color-primary: #00f7ff;
+  --color-secondary: #050505;
+  --button-size: clamp(0.5rem, 1vw + 1.5rem, 4rem);
+
+  --h1-font-shrinker: clamp(0.8rem, 1vw + 0.8rem, 4rem);
+
+  --p-font-shrink: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
+  --li-font-shrink: clamp(0.6rem, 2vw + 0.6rem, 1.1rem);
+}
