@@ -7,50 +7,23 @@
   justify-content: center;
   height: 100%;
 }
-.image-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
 
 .image-container img {
   width: 100%;
-  height: 100%;
-  display: block;
+  height: auto;
+  opacity: 0.5;
+  border-bottom: 2px solid #0af3f3;
 }
 
-.image-overlay {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 40px;
-  border: 4px solid #2d5754;
-  padding: 1rem;
-  width: 100%;
-  max-width: 600px;
-  height: 650px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+
 
 .checkmark {
-  display: inline-block;
-  width: 60px;
   height: 60px;
   background: url(https://th.bing.com/th/id/R.14f7b7011055f57e0db2aa259fb98f85?rik=k%2fJ1iAKmzI4ztg&pid=ImgRaw&r=0)
     center/contain no-repeat;
   margin-bottom: 10px;
 }
-.image-overlay h1 {
-  color: aqua;
-  margin: 10px 0;
-  align-self: center;
-  margin-top: 10%;
-  margin-bottom: 20px;
-}
+
 p {
   color: white;
   text-align: center;
@@ -62,12 +35,7 @@ p {
   padding-right: 30px;
 }
 
-h2 a {
-  color: #2acbd5;
-  font-size: 25px;
-  display: inline-block;
-  margin-top: 30px;
-}
+
 h2 {
   text-align: center;
   padding-bottom: 10px;
@@ -81,3 +49,4 @@ h5 {
   font-weight: 300;
   text-align: center;
 }
+
