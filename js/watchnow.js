@@ -1,8 +1,8 @@
-const url = new URL(document.location); // Use `new URL` directly to get the URLSearchParams
+const url = new URL(document.location);
 const params = new URLSearchParams(url.search);
 
 async function fetchSingleMovie(id) {
-    if (!id) throw new Error("Movie Id is undefined"); // Corrected conditional check
+    if (!id) throw new Error("Movie Id is undefined");
     const movieUrl = `https://api.noroff.dev/api/v1/square-eyes/${id}`;
 
     try {
@@ -15,6 +15,7 @@ async function fetchSingleMovie(id) {
         }
     } catch (error) {
         console.error(error);
+        throw error;
     }
 }
 
@@ -22,8 +23,8 @@ async function renderSingleMovie() {
     try {
         const id = params.get('id');
         const singleData = await fetchSingleMovie(id);
-        const MovieDetails = document.getElementById("movie-details");
-        MovieDetails.innerHTML = `
+        const movieDetails = document.getElementById("movie-details"); // Changed MovieDetails to movieDetails
+        movieDetails.innerHTML = `
         <div class= "movie-image">
             <img src="${singleData.image}" alt= "${singleData.title}">
         </div>
@@ -35,7 +36,7 @@ async function renderSingleMovie() {
             <p><strong>Released:</strong>${singleData.released}</p>
             <p><strong>Price:</strong>$${singleData.price.toFixed(2)}</p>
             <p><strong>Discounted Price:</strong>$${singleData.discountedPrice.toFixed(2)}</p>
-            <button class="add-to-cart-button" data-product-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
+            <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
         </div>
         `;
         const addToCartButton = document.querySelector('.add-to-cart-button');
@@ -47,22 +48,22 @@ async function renderSingleMovie() {
 
 function addToCartClicked(event) {
     const button = event.target;
-    const productId = button.dataset.productId;
+    const movieId = button.dataset.movieId; 
     const title = button.dataset.title;
     const image = button.dataset.image;
     const price = button.dataset.price;
-    addToCart(productId, title, image, price);
+    addToCart(movieId, title, image, price); 
     updateCartCount();
 }
 
-function addToCart(productId, title, image, price) {
+function addToCart(movieId, title, image, price) { 
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    const existingItemIndex = cartItems.findIndex(item => item.id === productId);
+    const existingItemIndex = cartItems.findIndex(item => item.id === movieId); 
     if (existingItemIndex !== -1) {
         cartItems[existingItemIndex].quantity++;
     } else {
         cartItems.push({ 
-            id: productId, 
+            id: movieId, 
             title: title, 
             image: image, 
             price: price, 
@@ -79,8 +80,13 @@ function updateCartCount() {
     cartCountElement.textContent = `CART(${currentCount})`;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    renderSingleMovie();
-    updateCartCount(); 
-});
+try {
+    document.addEventListener('DOMContentLoaded', () => {
+        renderSingleMovie();
+        updateCartCount(); 
+    });
+} catch (error) {
+    console.error(error);
+}
+
 

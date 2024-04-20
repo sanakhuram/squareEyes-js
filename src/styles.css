@@ -6,9 +6,7 @@
   justify-content: center;
   height: 100%;
 }
-body {
-  display: flex;
-}
+
 
 .main-wrapper {
   background-color: black;
@@ -51,8 +49,6 @@ h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 15px;
   color: #8dd618;
-  border-bottom: 1px solid#c3e724;
-  text-shadow: 1px 1px 2px yellow;
   text-align: center;
 }
 
