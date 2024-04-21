@@ -62,12 +62,8 @@ h1.right-aligned {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
+p{
   color: white;
-  text-align: left;
-  font-size: 30px var(--font-shrinker);
-  text-align: left;
-  padding-bottom:10px;
 }
 
 h4 {
