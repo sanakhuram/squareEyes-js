@@ -1,8 +1,9 @@
-const url = new URL(document.location);
-const params = new URLSearchParams(url.search);
+const url = document.location;
+const search = url.search;
+const params = new URLSearchParams(search);
 
 async function fetchSingleMovie(id) {
-    if (!id) throw new Error("Movie Id is undefined");
+    if (!id) throw new Error("Movie ID is undefined");
     const movieUrl = `https://api.noroff.dev/api/v1/square-eyes/${id}`;
 
     try {
@@ -15,30 +16,31 @@ async function fetchSingleMovie(id) {
         }
     } catch (error) {
         console.error(error);
-        throw error;
     }
 }
 
 async function renderSingleMovie() {
     try {
         const id = params.get('id');
+        const movieDetails = document.getElementById("movie-details");
         const singleData = await fetchSingleMovie(id);
-        const movieDetails = document.getElementById("movie-details"); // Changed MovieDetails to movieDetails
+
         movieDetails.innerHTML = `
-        <div class= "movie-image">
-            <img src="${singleData.image}" alt= "${singleData.title}">
-        </div>
-        <div class= "movie-info">
-            <h2>${singleData.title}</h2>
-            <p>${singleData.description}</p>
-            <p><strong>Genre:</strong>${singleData.genre}</p>
-            <p><strong>Rating:</strong>${singleData.rating}</p>
-            <p><strong>Released:</strong>${singleData.released}</p>
-            <p><strong>Price:</strong>$${singleData.price.toFixed(2)}</p>
-            <p><strong>Discounted Price:</strong>$${singleData.discountedPrice.toFixed(2)}</p>
-            <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
-        </div>
+            <div class="movie-image">
+                <img src="${singleData.image}" alt="${singleData.title}">
+            </div>
+            <div class="movie-info">
+                <h2>${singleData.title}</h2>
+                <p>${singleData.description}</p>
+                <p><strong>Genre:</strong> ${singleData.genre}</p>
+                <p><strong>Release Date:</strong> ${singleData.releaseDate}</p>
+                <p><strong>Rating:</strong> ${singleData.rating}</p>
+                <p><strong>Price:</strong> $${singleData.price.toFixed(2)}</p>
+                <p><strong style=color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(2)}</p>
+                <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
+            </div>
         `;
+
         const addToCartButton = document.querySelector('.add-to-cart-button');
         addToCartButton.addEventListener('click', addToCartClicked);
     } catch (error) {
@@ -48,17 +50,17 @@ async function renderSingleMovie() {
 
 function addToCartClicked(event) {
     const button = event.target;
-    const movieId = button.dataset.movieId; 
+    const movieId = button.dataset.movieId;
     const title = button.dataset.title;
     const image = button.dataset.image;
     const price = button.dataset.price;
-    addToCart(movieId, title, image, price); 
+    addToCart(movieId, title, image, price);
     updateCartCount();
 }
 
-function addToCart(movieId, title, image, price) { 
+function addToCart(movieId, title, image, price) {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    const existingItemIndex = cartItems.findIndex(item => item.id === movieId); 
+    const existingItemIndex = cartItems.findIndex(item => item.id === movieId);
     if (existingItemIndex !== -1) {
         cartItems[existingItemIndex].quantity++;
     } else {
@@ -78,17 +80,41 @@ function updateCartCount() {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     let currentCount = cartItems.reduce((total, item) => total + item.quantity, 0);
     cartCountElement.textContent = `CART(${currentCount})`;
-}
 
-try {
-    document.addEventListener('DOMContentLoaded', () => {
-        renderSingleMovie();
-        updateCartCount(); 
+
+    const cartDropdown = document.querySelector('.cart-dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdownContent.innerHTML = '';
+
+    cartItems.forEach(item => {
+        const cartItemDiv = document.createElement('div');
+        cartItemDiv.classList.add('cart-item');
+
+        const image = document.createElement('img');
+        image.src = item.image;
+        image.alt = item.title;
+        image.style.width = '50px';
+        image.style.borderRadius = '10px';
+        cartItemDiv.appendChild(image);
+
+        const cartItemDetails = document.createElement('span');
+        cartItemDetails.classList.add('cart-item-details');
+        cartItemDetails.innerHTML = `
+            <span class="cart-item-title">${item.title}</span> - <span class="cart-item-quantity">${item.quantity}</span>
+        `;
+        cartItemDiv.appendChild(cartItemDetails);
+
+        dropdownContent.appendChild(cartItemDiv);
     });
-} catch (error) {
-    console.error(error);
+
+
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    renderSingleMovie();
+    updateCartCount();
+});
 document.addEventListener('DOMContentLoaded', function() {
     const genreToggle = document.getElementById('genre-toggle');
     const genreOptions = document.getElementById('genre-options');

@@ -25,7 +25,10 @@
   height: 100%;
 }
 
-
+.cart-item-details {
+  font-size: 12px;
+  color: black;
+}
 
 
 
