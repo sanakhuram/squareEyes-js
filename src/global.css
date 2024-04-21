@@ -188,7 +188,7 @@ nav ul {
 }
 
 li.active {
-  background-color: yellow; /* Change to whatever color you prefer */
+  background-color: yellow;
 }
 li.active a{
   color: #151616;
@@ -196,7 +196,7 @@ li.active a{
 
 
 .menu li:active {
-  color: black; /* Change to the color you want for the link text */
+  color: black; 
 }
 
 
@@ -211,7 +211,6 @@ nav .left-items li {
   font-size: 15px;
 }
 nav {
-  display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #2acbd5;
 }
@@ -237,27 +236,7 @@ nav .right-items li span {
   color: white;
 }
 
-.footer-wrapper {
-  border-top: solid 1px aqua;
-  background-color: rgb(8, 8, 8);
-  color: white;
-}
-.footer-list-1 li {
-  display: list-item;
-  margin-top: 20px;
-  margin-left: 70px;
-  list-style-type: disc;
-  margin-bottom: 10px;
-  text-align: left;
-}
-.footer-list-2 li {
-  margin-top: 20px;
-  display: inline-block;
-  align-items: center;
-  margin-right: 60px;
-  display: list-item;
-  list-style-type: disc;
-}
+
 a{
   text-decoration: none;
   color:#0af3f3
@@ -341,4 +320,52 @@ a{
 
 .loading.show {
   display: block;
+}
+/*footer*/
+.footer-wrapper {
+  background:  radial-gradient(50% 50% at 50% 50%, #2acbd5 31.25%, #151616 100%);
+  border-top:1px solid aqua;
+  color: #fff;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section img {
+  height: 100px;
+}
+
+.social-icons img {
+  height: 35px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.terms-privacy p a {
+  text-decoration: none;
+  color: rgb(205, 50, 50);
+  color: #151616;
+}
+.footer-section p{
+  text-align: center;
+  color: #151616;
+}
+
+.footer-section h4 {
+  text-align: center;
+  padding: 15px;
+}
+
+.terms-privacy h3 {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.terms-privacy p {
+  text-align: center;
+  font-size: 15px;
 }
