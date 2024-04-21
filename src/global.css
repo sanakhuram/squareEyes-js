@@ -109,7 +109,6 @@ html {
 
 .menu li {
   margin-bottom: 15px;
-  border-bottom: 1px solid #0af3f3;
   display: list-item;
   text-align: center;
 }
@@ -300,6 +299,21 @@ a{
     margin-top: 10px;
 }
 
+
+}
+.hidden {
+  display: none;
+}
+#genre-toggle{
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid rgb(10, 10, 10);
+  border-radius: 20px;
+  background-color: #2d5754;
+}
+#genre-toggle:hover{
+  background-color: yellow;
+  color: black;
 }
 
 .loading {

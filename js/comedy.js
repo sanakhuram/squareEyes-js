@@ -58,8 +58,16 @@ function hideLoadingIndicator() {
 
 document.addEventListener('DOMContentLoaded', () => {
     try {
-        displayComedyMovies(); // Changed to call displayComedyMovies function
+        displayComedyMovies(); 
     } catch (error) {
         console.error(error);
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const genreToggle = document.getElementById('genre-toggle');
+    const genreOptions = document.getElementById('genre-options');
+  
+    genreToggle.addEventListener('click', function() {
+      genreOptions.classList.toggle('hidden');
+    });
+  });

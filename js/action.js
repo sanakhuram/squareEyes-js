@@ -63,3 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error(error);
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const genreToggle = document.getElementById('genre-toggle');
+    const genreOptions = document.getElementById('genre-options');
+  
+    genreToggle.addEventListener('click', function() {
+      genreOptions.classList.toggle('hidden');
+    });
+  });
