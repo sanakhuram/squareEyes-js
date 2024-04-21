@@ -54,6 +54,9 @@ html {
   display: inline-block;
   margin-left: 10px;
 }
+.links a:hover{
+color: yellow;
+}
 .links a {
   text-decoration: none;
   color: whitesmoke;
@@ -157,6 +160,9 @@ li {
   font-family: cursive;
   margin: 5px;
   text-align: center;
+}
+li:hover{
+  color: yellow;
 }
 nav ul {
   color: aliceblue;

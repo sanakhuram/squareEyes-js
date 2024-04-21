@@ -19,20 +19,19 @@
 
 .checkmark {
   height: 60px;
-  background: url(https://th.bing.com/th/id/R.14f7b7011055f57e0db2aa259fb98f85?rik=k%2fJ1iAKmzI4ztg&pid=ImgRaw&r=0)
-    center/contain no-repeat;
+  background: url(https://th.bing.com/th/id/R.14f7b7011055f57e0db2aa259fb98f85?rik=k%2fJ1iAKmzI4ztg&pid=ImgRaw&r=0) center/contain no-repeat;
   margin-bottom: 10px;
 }
 
 p {
-  color: white;
-  text-align: center;
-  font-size: 20px var(--p-font-shrink);
-  text-align: justify;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  color: aliceblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
 
 
@@ -51,12 +50,12 @@ h5 {
 }
 
 @media only screen and (min-width: 240px) and (max-width: 900px) and (min-resolution: 2dppx) {
-  p{
+  p {
     font-size: 15px;
 
   }
-  h2{
+
+  h2 {
     font-size: 20px;
   }
-  }
-
+}

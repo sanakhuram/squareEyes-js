@@ -1,187 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
-    <meta
-      name="description"
-      content="This page is provide information about SquareEyes."
-    />
-    <meta
-      name="keywords"
-      content="Sign In, Create an Account, About square eyes , Subscribe"
-    />
-    <title>SquareEyes | AboutUse</title>
-    <link rel="stylesheet" href="src/about.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
-    />
-  </head>
-  <body class="center">
-    <div class="center-container">
-      <div class="outside-wrapper">
-        <header class="header-wrapper">
-          <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" class="hamburger">&#9776;</label>
-          <nav class="menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="AboutUs.html#about-us">About Us</a></li>
-              <li class="active"><a href="AboutUs.html">Log In</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This page contains Collection of high Quality videos right from the Makers." />
+  <title>SquareEyes | About Us</title>
+  <link rel="stylesheet" href="src/terms&privacy.css" />
+</head>
+
+<body class="center">
+  <div class="center-container">
+    <div class="outside-wrapper">
+      <header class="header-wrapper">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="AboutUs.html">About Us</a></li>
+            <li id="genre-toggle"><strong>Genre</strong></li>
+            <ul id="genre-options" class="hidden">
               <li><a href="action.html">Action</a></li>
               <li><a href="horror.html">Horror</a></li>
               <li><a href="kids.html">Kids</a></li>
               <li><a href="comedy.html">Comedy</a></li>
               <li><a href="drama.html">Drama</a></li>
             </ul>
-              <li><a href="cart.html" class="cart-count">Cart (0)</a>
-            </ul>
-            <div class="bottom-options">
-              <button class="subscribe-button">Subscribe</button>
-            </div>
-          </nav>
-          <div class="links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="AboutUs.html">Sign In</a></li>
-              <li><a href="AboutUs.html#about-us">About Us</a></li>
-            </ul>
+            <li><a href="cart.html">Cart(0)</a></li>
+          </ul>
+          <div class="bottom-options">
+            <button class="subscribe-button" onclick="alert('You are now subscribed to SquareEyes')">Subscribe</button>
+            <p>
+              <img src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png" alt="icons-leading-Socialmedia" />
+            </p>
           </div>
-          <div class="header-content">
-            <a href="index.html">
-              <img
-                src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png"
-                alt="SquareEyes_ Connectingfilmlovers"
-              />
-            </a>
-          </div>
-        </header>
-        <main class="main-wrapper">
-          <section class="image-container1">
-            <img
-              src="assets/images/backgroundimageforaboutpage.png"
-              alt="backgroundimage-of-movies"
-            />
-            <div class="image-overlay-1">
-              <form id="signInForm">
-                <h3>Sign In</h3>
-                <label for="username1">Email Address:</label>
-                <input type="text" id="username1" name="username" required />
-                <br />
-                <label for="password1">Password:</label>
-                <input
-                  type="password"
-                  id="password1"
-                  name="password"
-                  required
-                />
-                <label for="remember">
-                  Remember me for 30 days
-                  <input type="checkbox" id="remember" name="remember" />
-                </label>
-              </form>
-              <div class="social-buttons">
-                <button class="google-button">SignIn with google</button>
-                or
-                <button class="apple-button">Sign In with Apple</button>
-              </div>
-              <a>Don't have an account?Get Started</a>
-            </div>
-          </section>
-          <section class="image-container2">
-            <img
-              src="assets/images/backgroundimageforaboutpage.png"
-              alt="backgroundimage-of-movies"
-            />
-            <div class="image-overlay-2">
-              <div class="get-started-container">
-                <h4>Get Started</h4>
-                <form id="signUpForm">
-                  <label for="username2">Email Address:</label>
-                  <input type="text" id="username2" name="username" required />
-                  <br />
-                  <label for="password2">Password:</label>
-                  <input
-                    type="password"
-                    id="password2"
-                    name="password"
-                    required
-                  />
-                  <label>
-                    Remember me for 30 days
-                    <input type="checkbox" name="remember" />
-                  </label>
-                </form>
-                <div class="social-buttons">
-                  <button class="google-button">Sign In with google</button>
-                  or
-                  <button class="apple-button">Sign In with Apple</button>
-                </div>
-              </div>
-              <a>Already have an account? Sign In</a>
-            </div>
-          </section>
-        </main>
-        <div class="content-container">
-          <h1 id="about-us">ABOUT US</h1>
-          <p>
-            At Square Eyes, we pride ourselves on being the ultimate destination
-            for film-lovers seeking extraordinary content. Our platform serves
-            as a seamless bridge between creators and enthusiasts, offering a
-            carefully curated selection of high-quality films directly from the
-            minds that bring them to life. We are dedicated to supporting small
-            filmmakers and providing a unique space for you to effortlessly
-            explore captivating narratives across diverse categories.When you
-            choose to join our community at [Website Name], your purchase goes
-            beyond a mere transaction – it becomes an investment in the art of
-            storytelling. We believe in the power of cinema to inspire,
-            entertain, and provoke thought, and we strive to create an
-            environment where cinema thrives and connections flourish. With us,
-            you can expect a streaming experience that goes beyond the ordinary.
-            We invite you to embark on a journey of cinematic exploration, where
-            extraordinary films await your discovery. Join us at Square Eyes and
-            immerse yourself in a world of captivating stories, where the heart
-            of filmmaking beats strong.
-          </p>
-          <h2>SUBSCRIBE</h2>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <button
-            class="Submit-button"
-            onclick="alert('You are now Subscribed for Latest Movies')"
-          >
-            Submit
-          </button>
+        </nav>
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="AboutUs.html">About Us</a></li>
+            <li><a href="terms&privacy.html">Contact Us</a></li>
+          </ul>
         </div>
-                
+        <div class="header-content">
+          <img src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png" class="logo"
+            alt="SquareEyes_ Connectingfilmlovers" />
+        </div>
+      </header>
+      <main class="main-wrapper">
+        <div class="image-container">
+          <img src="assets/images/cover-background.png" alt="backgroundimage-of-movies" />
+          <h1 class="heading-over-image">About Us!</h1>
+        </div>
+
+        <section class="text">
+          <h2>About SquareEyes</h2>
+          <p>Welcome to SquareEyes, the ultimate destination for film enthusiasts seeking extraordinary cinematic
+            experiences.</p>
+
+            <p>At SquareEyes, we're on a mission to redefine the way you experience movies. We believe that film has the
+            power to transport, inspire, and unite us, and we're dedicated to curating an exceptional collection of
+            films that celebrate the art of storytelling in all its forms.</p>
+
+           <p> Our platform is built on the foundation of passion—for film, for creativity, and for the boundless
+            possibilities of the cinematic medium. From timeless classics to cutting-edge indie gems, we offer a
+            handpicked selection of movies that span genres, eras, and cultures, ensuring that there's something for
+            every taste and mood.</p>
+
+            <p> SquareEyes is more than just a streaming service—it's a community of like-minded film lovers who share a
+            deep appreciation for the magic of cinema. We're committed to fostering connections and sparking
+            conversations, whether it's through our curated collections, interactive events, or vibrant online forums.</p>
+
+           <p>At SquareEyes, we're also proud to champion diversity and inclusion in film. We believe that every voice
+            deserves to be heard and every story deserves to be told, which is why we actively seek out and promote
+            underrepresented filmmakers and narratives from around the world.</p>
+
+            <p> you join SquareEyes, you're not just gaining access to a vast library of movies—you're joining a
+            movement. A movement that celebrates creativity, embraces diversity, and believes in the transformative
+            power of storytelling. So come on board, and let your imagination run wild. Welcome to SquareEyes—where the
+            adventure begins.</p>
+            <p>Don't hesitate to contact us for more information.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <form>
+            <div>
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="message">Message</label><br>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </section>
+
         <footer>
           <div class="footer-wrapper">
-              <div class="footer-section">
-                  <p>Follow Us:</p>
-                  <div class="social-icons">
-                      <img src="assets/images/facebook-logo_icon.png" alt="Facebook Logo">
-                      <img src="assets/twitter_icon.png" alt="Twitter Logo">
-                      <img src="assets/images/instagram_icon.png" alt="Instagram Logo">
-                  </div>
+            <div class="footer-section">
+              <p>Follow Us:</p>
+              <div class="social-icons">
+                <img src="assets/images/facebook-logo_icon.png" alt="Facebook Logo">
+                <img src="assets/twitter_icon.png" alt="Twitter Logo">
+                <img src="assets/images/instagram_icon.png" alt="Instagram Logo">
               </div>
-              <div class="footer-section">
-                  <img src="assets/images/SquareEyes_Logo.png" alt="SquareEyes Logo">
-              </div>
-              <div class="terms-privacy">
-                  <h3><a href="terms&privacy.html">Terms & Conditions</a></h3>
-                  <p>© 2024 SquareEyes. All Rights Reserved.</p>
-              </div>
+            </div>
+            <div class="footer-section">
+              <img src="assets/images/SquareEyes_Logo.png" alt="SquareEyes Logo">
+            </div>
+            <div class="terms-privacy">
+              <h3><a href="terms&privacy.html">Terms & Conditions</a></h3>
+              <p>© 2024 SquareEyes. All Rights Reserved.</p>
+            </div>
           </div>
-      </footer>
-  </div>
-
-      </div>
+        </footer>
     </div>
-  </body>
+
+  </div>
+  </div>
+  <script src="./js/kids.js"></script>
+</body>
+
 </html>
