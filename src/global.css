@@ -344,11 +344,6 @@ a{
   padding-top: 10px;
 }
 
-.terms-privacy p a {
-  text-decoration: none;
-  color: rgb(205, 50, 50);
-  color: #151616;
-}
 .footer-section p{
   text-align: center;
   color: #151616;
@@ -362,10 +357,20 @@ a{
 .terms-privacy h3 {
   text-align: center;
   padding: 20px;
+  font-weight: bold;
   
 }
 
 .terms-privacy p {
   text-align: center;
   font-size: 15px;
+}
+.terms-privacy a{
+  color: #151616;
+  font-weight: bold;
+
+}
+.terms-privacy a:hover{
+color: yellow;
+
 }
