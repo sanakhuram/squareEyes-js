@@ -284,7 +284,9 @@ a{
     width: 50%;
     margin-top: 10px;
 }
-
+button.add-to-cart-button{
+  padding: 5px 20px;
+}
 
 }
 .hidden {
