@@ -17,10 +17,74 @@
 
 
 
-.checkmark {
+.checkbox-image {
   height: 60px;
   background: url(https://th.bing.com/th/id/R.14f7b7011055f57e0db2aa259fb98f85?rik=k%2fJ1iAKmzI4ztg&pid=ImgRaw&r=0) center/contain no-repeat;
   margin-bottom: 10px;
+}
+.checkbox-image {
+  margin-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  animation: appearCheckmark 1s infinite alternate;
+  animation-delay: 2s; 
+}
+
+@keyframes appearCheckmark {
+  0% { 
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1);
+   }
+  100% { 
+      transform: scale(1.1);
+  opacity: 1;
+visibility: visible; 
+}
+}
+
+.continue-shopping a:hover{
+color:yellow;
+}
+
+
+.message-container {
+  display: none; 
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.heading{
+  text-align: center;
+}
+
+.heading-over-image1 {
+  overflow: hidden; 
+  white-space: nowrap; 
+  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite; 
+ 
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #d9fd0c;
+  font-size: 60px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+@media only screen and (min-width: 240px) and (max-width: 900px) and (min-resolution: 2dppx) {
+  .heading-over-image1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 70px;
+  }
 }
 
 p {
