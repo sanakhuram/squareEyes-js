@@ -18,7 +18,6 @@ async function fetchSingleMovie(id) {
         console.error(error);
     }
 }
-
 async function renderSingleMovie() {
     try {
         const id = params.get('id');
@@ -46,11 +45,19 @@ async function renderSingleMovie() {
         `;
 
         const addToCartButton = document.querySelector('.add-to-cart-button');
-        addToCartButton.addEventListener('click', addToCartClicked);
+        addToCartButton.addEventListener('click', () => {
+            const movieId = singleData.id;
+            const title = singleData.title;
+            const image = singleData.image;
+            const price = singleData.price.toFixed(2);
+            addToCart(movieId, title, image, price);
+            updateCartCount();
+        });
     } catch (error) {
         console.error(error);
     }
 }
+
 
 function addToCartClicked(event) {
     const button = event.target;
