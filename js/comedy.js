@@ -31,7 +31,7 @@ const displayComedyMovies = async () => {
                     <div class="movie" data-movie-id="${movie.id}">
                         <h2>${movie.title}</h2>
                         <p>${movie.description}</p>
-                        <a href="watchnow.html?id=${movie.id}">
+                        <a href="/product/index.html?id=${movie.id}">
                             <img src="${movie.image}" alt="${movie.title}">
                         </a>
                         <div class="movie-price">$${movie.price.toFixed(2)}</div>

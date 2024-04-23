@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalContainer = document.querySelector('.total');
     const loadingIndicator = document.querySelector('.loading');
     const checkoutButton = document.querySelector('.checkout-button');
-    
-    let cartArray = []; 
+
+    let cartArray = [];
     const storedCart = localStorage.getItem('cart');
     if (storedCart) {
         cartArray = JSON.parse(storedCart);
@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
         cartList.innerHTML = "";
         let total = 0;
 
-        loadingIndicator.style.display = 'block'; 
+        loadingIndicator.style.display = 'block';
 
-        setTimeout(() => { 
+        setTimeout(() => {
             cartItems.forEach(function (cartElement) {
                 cartList.innerHTML +=
                     `
                     <div class="cart-item">
                         <h4>${cartElement.title}</h4>
-                        
+
                         <img src="${cartElement.image}" alt="${cartElement.title}">
                         <div class="quantity-buttons">
                             <button class="remove-button" data-product="${cartElement.id}">Remove</button>
@@ -37,31 +37,31 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             totalContainer.innerHTML = `Total: $${total.toFixed(2)}`;
-            
+
             loadingIndicator.style.display = 'none';
         }, 1000);
     }
-    
+
     document.addEventListener('click', (event) => {
         if (event.target.classList.contains('increment-button')) {
-            const productId = event.target.dataset.product;
-            const cartItem = cartArray.find(item => item.id === productId);
+            const movieId = event.target.dataset.product;
+            const cartItem = cartArray.find(item => item.id === movieId);
             if (cartItem) {
                 cartItem.quantity++;
                 showCart(cartArray);
                 localStorage.setItem('cart', JSON.stringify(cartArray));
             }
         } else if (event.target.classList.contains('decrement-button')) {
-            const productId = event.target.dataset.product;
-            const cartItem = cartArray.find(item => item.id === productId);
+            const movieId = event.target.dataset.product;
+            const cartItem = cartArray.find(item => item.id === movieId);
             if (cartItem && cartItem.quantity > 1) {
                 cartItem.quantity--;
                 showCart(cartArray);
                 localStorage.setItem('cart', JSON.stringify(cartArray));
             }
         } else if (event.target.classList.contains('remove-button')) {
-            const productId = event.target.dataset.product;
-            const cartItemIndex = cartArray.findIndex(item => item.id === productId);
+            const movieId = event.target.dataset.product;
+            const cartItemIndex = cartArray.findIndex(item => item.id === movieId);
             if (cartItemIndex !== -1) {
                 cartArray.splice(cartItemIndex, 1);
                 showCart(cartArray);
@@ -72,11 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function () {
     const genreToggle = document.getElementById('genre-toggle');
     const genreOptions = document.getElementById('genre-options');
-  
-    genreToggle.addEventListener('click', function() {
-      genreOptions.classList.toggle('hidden');
+
+    genreToggle.addEventListener('click', function () {
+        genreOptions.classList.toggle('hidden-genres');
     });
-  });
+});
