@@ -37,7 +37,11 @@ async function renderSingleMovie() {
                 <p><strong>Rating:</strong> ${singleData.rating}</p>
                 <p><strong>Price:</strong> $${singleData.price.toFixed(2)}</p>
                 <p><strong style=color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(2)}</p>
-                <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
+                <button class="add-to-cart-button" 
+                        data-movie-id="${singleData.id}" 
+                        data-title="${singleData.title}" 
+                        data-image="${singleData.image}" 
+                        data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
             </div>
         `;
 
@@ -47,6 +51,8 @@ async function renderSingleMovie() {
         console.error(error);
     }
 }
+
+
 
 function addToCartClicked(event) {
     const button = event.target;
