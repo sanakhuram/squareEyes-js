@@ -18,6 +18,7 @@ async function fetchSingleMovie(id) {
         console.error(error);
     }
 }
+
 async function renderSingleMovie() {
     try {
         const id = params.get('id');
@@ -36,42 +37,26 @@ async function renderSingleMovie() {
                 <p><strong>Rating:</strong> ${singleData.rating}</p>
                 <p><strong>Price:</strong> $${singleData.price.toFixed(2)}</p>
                 <p><strong style=color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(2)}</p>
-                <button class="add-to-cart-button" 
-                        data-movie-id="${singleData.id}" 
-                        data-title="${singleData.title}" 
-                        data-image="${singleData.image}" 
-                        data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
+                <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
             </div>
         `;
 
         const addToCartButton = document.querySelector('.add-to-cart-button');
-        addToCartButton.addEventListener('click', () => {
-            const movieId = singleData.id;
-            const title = singleData.title;
-            const image = singleData.image;
-            const price = singleData.price.toFixed(2);
-            addToCart(movieId, title, image, price);
-            updateCartCount();
-        });
+        addToCartButton.addEventListener('click', addToCartClicked);
     } catch (error) {
         console.error(error);
     }
 }
 
-
 function addToCartClicked(event) {
     const button = event.target;
-    const movieInfo = button.closest('.movie-info');
-    const movieId = button.dataset.movieId || movieInfo.querySelector('[data-movie-id]').dataset.movieId;
-    const title = button.dataset.title || movieInfo.querySelector('[data-title]').dataset.title;
-    const image = button.dataset.image || movieInfo.querySelector('[data-image]').dataset.image;
-    const price = button.dataset.price || movieInfo.querySelector('[data-price]').dataset.price;
+    const movieId = button.dataset.movieId;
+    const title = button.dataset.title;
+    const image = button.dataset.image;
+    const price = button.dataset.price;
     addToCart(movieId, title, image, price);
     updateCartCount();
 }
-
-
-
 
 function addToCart(movieId, title, image, price) {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
