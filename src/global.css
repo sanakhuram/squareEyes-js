@@ -310,17 +310,9 @@ button.add-to-cart-button{
   color: black;
 }
 
-.loading {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(9, 239, 247, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-  z-index: 1000;
-  color: #151616;
+
+.loading{
+  text-align: center;
 }
 .loading {
   display: none;

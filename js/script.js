@@ -12,18 +12,18 @@ const fetchMovies = async (url) => {
     }
   } catch (error) {
     console.error(error);
-    throw error; 
+    throw error;
   }
 };
 
 const displayMovies = async () => {
   try {
-    showLoadingIndicator();
-    movies = await fetchMovies(URL);
+    const data = await fetchMovies(URL); 
+    movies = data;
     const moviesContainer = document.querySelector('.movies');
     movies.forEach(movie => {
       moviesContainer.innerHTML +=
-      `
+        `
       <div class="movie" data-movie-id="${movie.id}">
         <h2>${movie.title}</h2>
         <p>${movie.description}</p>
@@ -52,15 +52,16 @@ function hideLoadingIndicator() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  displayMovies();
+  showLoadingIndicator();
+  setTimeout(displayMovies, 2000); 
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const genreToggle = document.getElementById('genre-toggle');
   const genreOptions = document.getElementById('genre-options');
 
-  genreToggle.addEventListener('click', function() {
+  genreToggle.addEventListener('click', function () {
     genreOptions.classList.toggle('hidden');
   });
 });
