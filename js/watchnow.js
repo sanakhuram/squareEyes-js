@@ -52,17 +52,19 @@ async function renderSingleMovie() {
     }
 }
 
-
-
 function addToCartClicked(event) {
     const button = event.target;
-    const movieId = button.dataset.movieId;
-    const title = button.dataset.title;
-    const image = button.dataset.image;
-    const price = button.dataset.price;
+    const movieInfo = button.closest('.movie-info');
+    const movieId = button.dataset.movieId || movieInfo.querySelector('[data-movie-id]').dataset.movieId;
+    const title = button.dataset.title || movieInfo.querySelector('[data-title]').dataset.title;
+    const image = button.dataset.image || movieInfo.querySelector('[data-image]').dataset.image;
+    const price = button.dataset.price || movieInfo.querySelector('[data-price]').dataset.price;
     addToCart(movieId, title, image, price);
     updateCartCount();
 }
+
+
+
 
 function addToCart(movieId, title, image, price) {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
