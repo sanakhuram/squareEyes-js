@@ -63,27 +63,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-/*.New-release img {
-  width: 50%;
-  max-width: 200px;
-  height: auto;
-}
-.New-release {
-  display: flex;
-  gap: 4vw;
-  overflow-x: auto;
-  width: auto;
-  height: auto;y
-  flex-shrink: 0;
-  margin: auto;
-  border-radius: 40px;
-  background: radial-gradient(50% 50% at 50% 50%, #2acbd5 31.25%, #151616 100%);
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  background-color: rgb(19, 19, 18);
-}*/
 
-/* Style for the container */
 .movie-container {
   display: flex;
 
@@ -126,7 +106,7 @@ h2 {
   border: 1px solid yellow;
   cursor: pointer;
   margin-top: 20px;
-  z-index: 1; /* Ensure buttons appear above the scrollbar */
+  z-index: 1; 
 }
 
 .movie-button:hover {
@@ -139,7 +119,7 @@ h2 {
     width: 50%; 
   }
   .movie-image{
-    width :150px;
+    width :100px;
   }
 }
 
