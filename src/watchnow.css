@@ -1,20 +1,6 @@
 @import url("./global.css");
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-  .main-wrapper {
-    flex-direction: column;
-  }
-  .movie-icon {
-    display: none;
-  }
-  .links {
-    display: none;
-  }
-  .left-items,
-  .right-items li {
-    display: none;
-  }
-}
+
 
 
 .header-content {
@@ -50,31 +36,16 @@
   background-color: #ccb807;
 }
 
-h1.left-aligned {
-  text-align: center;
-  font-size: x-large;
-  font-weight: bold;
-  padding-left: 20px;
-}
-h1.right-aligned {
-  text-align: right;
-  font-weight: bold;
-  color: #f80a0a;
-  font-size: large;
-  padding-right: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 p{
   color: white;
 }
 
-h4 {
-  color: rgb(141, 141, 70);
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+h1{
   text-align: center;
+  border-bottom: 1px solid aqua;
+  padding: 20px;
 }
 #movie-details {
   display: flex;
@@ -111,3 +82,47 @@ h4 {
   margin-bottom: 0;
 }
 
+ /* Contact Form Styles */
+ form {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px; 
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color:aqua;
+  color:black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+.text p{
+  padding: 20px;
+}
+h4{
+  text-align: center;
+  border-top: 1px solid aqua;
+  padding: 20px;
+  color: white;
+}

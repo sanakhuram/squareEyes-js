@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This page contains Collection of high Quality videos right from the Makers." />
-  <title>SquareEyes | Home</title>
-  <link rel="stylesheet" href="src/styles.css" />
-</head>
-<body class="center">
-  <div class="center-container">
-    <div class="outside-wrapper">
-      <header class="header-wrapper">
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
-        <nav class="menu">
-          <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="./html/AboutUs.html">About Us</a></li>
-            <li id="genre-toggle"><strong>Genre</strong></li>
-            <ul id="genre-options" class="hidden">
-              <li><a href="./genre/action.html">Action</a></li>
-              <li><a href="./genre/horror.html">Horror</a></li>
-              <li><a href="./genre/kids.html">Kids</a></li>
-              <li><a href="./genre/comedy.html">Comedy</a></li>
-              <li><a href="./genre/drama.html">Drama</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page contains Collection of high Quality videos right from the Makers."
+    />
+    <title>SquareEyes | Home</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body class="center">
+    <div class="center-container">
+      <div class="outside-wrapper">
+        <header class="header-wrapper">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+          <nav class="menu">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="./html/AboutUs.html">About Us</a></li>
+              <li id="genre-toggle"><strong>Genre</strong></li>
+              <ul id="genre-options" class="hidden">
+                <li><a href="./genre/action.html">Action</a></li>
+                <li><a href="./genre/horror.html">Horror</a></li>
+                <li><a href="./genre/kids.html">Kids</a></li>
+                <li><a href="./genre/comedy.html">Comedy</a></li>
+                <li><a href="./genre/drama.html">Drama</a></li>
+              </ul>
+              <li><a href="./basket/checkout/index.html">Cart(0)</a></li>
             </ul>
-            <li><a href="./basket/checkout/index.html">Cart(0)</a></li>
-          </ul>
-          <div class="bottom-options">
-            <button class="subscribe-button" onclick="alert('You are now subscribed to SquareEyes')">Subscribe</button>
-            <p>
-              <img src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png" alt="icons-leading-Socialmedia" />
-            </p>
+            <div class="bottom-options">
+              <button
+                class="subscribe-button"
+                onclick="alert('You are now subscribed to SquareEyes')"
+              >
+                Subscribe
+              </button>
+              <p>
+                <img
+                  src="assets/images/icons/5ca47eb9-a4ac-480d-a054-9a5a494a4723.png"
+                  alt="icons-leading-Socialmedia"
+                />
+              </p>
+            </div>
+          </nav>
+          <div class="links">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="./html/AboutUs.html">About Us</a></li>
+              <li><a href="./html/terms&privacy.html">Contact Us</a></li>
+            </ul>
           </div>
-        </nav>
-        <div class="links">
-          <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="./html/AboutUs.html">About Us</a></li>
-            <li><a href="./html/terms&privacy.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="header-content">
-          <img src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png" class="logo" alt="SquareEyes_ Connectingfilmlovers" />
-        </div>
-      </header>
-      
+          <div class="header-content">
+            <img
+              src="assets/images/6c0cffe2-91aa-40c8-90ae-6543b7ca2d6c.png"
+              class="logo"
+              alt="SquareEyes_ Connectingfilmlovers"
+            />
+          </div>
+        </header>
+
         <div class="image-container">
-          <img src="assets/images/cover-background.png" alt="backgroundimage-of-movies" />
-          <h1 class="heading-over-image">Enjoy<br> High Quality Movies<br> Now!</h1>
+          <img
+            src="assets/images/cover-background.png"
+            alt="backgroundimage-of-movies"
+          />
+          <h1 class="heading-over-image">
+            Enjoy<br />
+            High Quality Movies<br />
+            Now!
+          </h1>
           <div class="right-item-container"></div>
         </div>
 
         <h3>Movie Collection</h3>
         <div class="loading">Loading...</div>
         <div class="movies"></div>
-        <h2>New Release</h2>
-          <div class="New-release">
-            <img
-              src="assets/images/NewreleaseAdamsFamily.png"
-              alt="Movie-Adams-Family-2019-family"
-            />
+
+        <h3>Movie Library</h3>
+
+        <div class="movie-container">
+          <div class="movie-card">
+            <img src="assets/images/The-Adams-Family.jpg" alt="Movie-Adams-Family-2019-family" class="movie-image" />
+            <a href="./genre/kids.html" class="movie-button">Kids</a>
+          </div>
+        
+          <div class="movie-card">
+            <img src="assets/images/scream.jpg" alt="Movie-scream-2022-horror" class="movie-image" />
+            <a href="./genre/drama.html" class="movie-button">Drama</a>
+          </div>
+        
+          <div class="movie-card">
+            <img src="assets/images/Once-upon-a-time-in-hollywood.png" alt="Movie_Once-Upon-a-time-inHollywood-2019-Drama" class="movie-image" />
+            <a href="./genre/comedy.html" class="movie-button">Comedy</a>
+          </div>
+        
+          <div class="movie-card">
+            <img src="assets/images/hobbs&shaw.jpg" alt="Hobs and shaw action movie" class="movie-image" />
+            <a href="./genre/action.html" class="movie-button">Action</a>
+          </div>
+        
+          <div class="movie-card">
+            <img src="assets/images/SweetHeart.jpg" alt="Movie sweet heart" class="movie-image" />
+            <a href="./genre/horror.html" class="movie-button">Horror</a>
+          </div>
+        </div>
+        
+          <!--
+            <button>Kids</button>
             <img
               src="assets/images/newReleaseToystory.png"
               alt="Movie-toy-story-2019-family"
@@ -104,25 +153,35 @@
           <img
             src="assets/images/newrelaeseintothewoods.jpg"
             alt="Movie-in"
-          />
-          </div>
-      
-        
+          />-->
+        </div>
+
         <footer>
           <div class="footer-wrapper">
             <div class="footer-section">
               <p>Follow Us:</p>
               <div class="social-icons">
-                <img src="assets/images/facebook-logo_icon.png" alt="Facebook Logo">
-                <img src="assets/twitter_icon.png" alt="Twitter Logo">
-                <img src="assets/images/instagram_icon.png" alt="Instagram Logo">
+                <img
+                  src="assets/images/facebook-logo_icon.png"
+                  alt="Facebook Logo"
+                />
+                <img src="assets/twitter_icon.png" alt="Twitter Logo" />
+                <img
+                  src="assets/images/instagram_icon.png"
+                  alt="Instagram Logo"
+                />
               </div>
             </div>
             <div class="footer-section">
-              <img src="assets/images/SquareEyes_Logo.png" alt="SquareEyes Logo">
+              <img
+                src="assets/images/SquareEyes_Logo.png"
+                alt="SquareEyes Logo"
+              />
             </div>
             <div class="terms-privacy">
-              <h3><a href="./html/terms&privacy.html">Terms & Conditions</a></h3>
+              <h3>
+                <a href="./html/terms&privacy.html">Terms & Conditions</a>
+              </h3>
               <p>© 2024 SquareEyes. All Rights Reserved.</p>
             </div>
           </div>
@@ -131,4 +190,4 @@
     </div>
     <script src="./js/script.js"></script>
   </body>
-  </html>
+</html>
