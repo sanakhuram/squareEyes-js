@@ -19,7 +19,7 @@ const fetchMovies = async (url) => {
 
 const displayHorrorMovies = async () => {
     try {
-        showLoadingIndicator();
+        
         movies = await fetchMovies(URL);
         const movieContainer = document.querySelector('.movies');
        
@@ -57,11 +57,9 @@ function hideLoadingIndicator() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    try {
-        displayHorrorMovies(); 
-    } catch (error) {
-        console.error(error);
-    }
+    showLoadingIndicator();
+    setTimeout(displayHorrorMovies, 2000); 
+   
 });
 document.addEventListener('DOMContentLoaded', function() {
     const genreToggle = document.getElementById('genre-toggle');

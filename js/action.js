@@ -19,7 +19,7 @@ const fetchMovies = async (url) => {
 
 const displayActionMovies = async () => {
     try {
-        showLoadingIndicator();
+        
         movies = await fetchMovies(URL);
         const movieContainer = document.querySelector('.movies');
        
@@ -31,7 +31,7 @@ const displayActionMovies = async () => {
                     <div class="movie" data-movie-id="${movie.id}">
                         <h2>${movie.title}</h2>
                         <p>${movie.description}</p>
-                        <a href="./product/index.html?id=${movie.id}">
+                        <a href="../product/index.html?id=${movie.id}">
                             <img src="${movie.image}" alt="${movie.title}">
                         </a>
                         <div class="movie-price">$${movie.price.toFixed(2)}</div>
@@ -57,11 +57,8 @@ function hideLoadingIndicator() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    try {
-        displayActionMovies();
-    } catch (error) {
-        console.error(error);
-    }
+    showLoadingIndicator();
+    setTimeout(displayActionMovies, 2000);
 });
 document.addEventListener('DOMContentLoaded', function() {
     const genreToggle = document.getElementById('genre-toggle');
