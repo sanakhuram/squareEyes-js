@@ -1,10 +1,12 @@
+import { URL } from "./constants.mjs";
+
 const url = document.location;
 const search = url.search;
 const params = new URLSearchParams(search);
 
 async function fetchSingleMovie(id) {
     if (!id) throw new Error("Movie ID is undefined");
-    const movieUrl = `https://api.noroff.dev/api/v1/square-eyes/${id}`;
+    const movieUrl = `${URL}/${id}`;
 
     try {
         const response = await fetch(movieUrl);

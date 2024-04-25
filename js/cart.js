@@ -73,11 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const genreToggle = document.getElementById('genre-toggle');
     const genreOptions = document.getElementById('genre-options');
-
-    genreToggle.addEventListener('click', function () {
-        genreOptions.classList.toggle('hidden-genres');
+  
+    genreToggle.addEventListener('click', function() {
+      genreOptions.classList.toggle('hidden');
     });
-});
+  });

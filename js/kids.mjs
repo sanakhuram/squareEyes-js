@@ -1,4 +1,4 @@
-const URL = 'https://api.noroff.dev/api/v1/square-eyes';
+import { URL } from "./constants.mjs";
 let movies = [];
 let cartArray = [];
 
@@ -13,18 +13,18 @@ const fetchMovies = async (url) => {
         }
     } catch (error) {
         console.error(error);
-        throw error; // Rethrow the error so it can be caught by the calling function if needed
+        throw error; 
     }
 }
 
-const displayHorrorMovies = async () => {
+const displayKidsMovies = async () => {
     try {
-        
+       
         movies = await fetchMovies(URL);
         const movieContainer = document.querySelector('.movies');
        
         movies.forEach(movie => {
-            if (movie.genre.toLowerCase() === 'horror') { 
+            if (movie.genre.toLowerCase() === 'kids') { // Changed 'horror' to 'kids'
                 movie.quantity = 1;
                 movieContainer.innerHTML +=
                     `
@@ -58,8 +58,8 @@ function hideLoadingIndicator() {
 
 document.addEventListener('DOMContentLoaded', () => {
     showLoadingIndicator();
-    setTimeout(displayHorrorMovies, 2000); 
-   
+    setTimeout(displayKidsMovies, 1000);
+    
 });
 document.addEventListener('DOMContentLoaded', function() {
     const genreToggle = document.getElementById('genre-toggle');

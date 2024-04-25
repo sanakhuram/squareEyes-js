@@ -138,7 +138,7 @@ color: yellow;
   text-align: center;
 }
 .subscribe-button {
-  background-color: #2acbd5;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
   color: black;
   padding: 6px 25px;
   border: solid 1px white;
@@ -148,7 +148,7 @@ color: yellow;
   transition: background-color 0.3s ease-in-out;
 }
 .subscribe-button:hover {
-  background-color:yellow;
+  background:yellow;
 }
 .bottom-options img {
   width: 40%;
@@ -302,13 +302,14 @@ button.add-to-cart-button{
 #genre-toggle{
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid rgb(10, 10, 10);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
-  background-color: #2d5754;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
+  color: #070707;
 }
 #genre-toggle:hover{
-  background-color: yellow;
-  color: black;
+  background: yellow;
+ 
 }
 
 
@@ -347,7 +348,7 @@ button.add-to-cart-button{
 
 .footer-section p{
   text-align: center;
-  color: #151616;
+  color: #f9fcfc;
 }
 
 .footer-section h4 {
@@ -367,7 +368,7 @@ button.add-to-cart-button{
   font-size: 15px;
 }
 .terms-privacy a{
-  color: #151616;
+  color: #fdffff;
   font-weight: bold;
 
 }
