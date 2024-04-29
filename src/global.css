@@ -162,8 +162,10 @@ li {
   margin: 5px;
   text-align: center;
 }
+
 li:hover{
   color: yellow;
+  border-radius: 60px;
 }
 nav ul {
   color: aliceblue;
@@ -173,6 +175,7 @@ nav ul {
 }
 .menu li:hover {
   background-color: yellow; 
+ 
 }
 
 .menu ul:hover a {
@@ -180,7 +183,9 @@ nav ul {
 }
 
 li.active {
-  background-color: yellow;
+  background-color: yellow; 
+  padding: 5px 15px;
+  border-radius: 60px;
 }
 li.active a{
   color: #151616;
