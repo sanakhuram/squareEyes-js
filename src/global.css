@@ -165,7 +165,7 @@ li {
 
 li:hover{
   color: yellow;
-  border-radius: 60px;
+  border-radius: 30px;
 }
 nav ul {
   color: aliceblue;
