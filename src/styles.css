@@ -64,40 +64,17 @@ h2 {
 }
 
 
-.movie-container {
-  display: flex;
+.filter-buttons {
+  text-align: center; 
+  margin-top: 20px; 
+}
 
-  border-radius: 40px;
-  background: radial-gradient(50% 50% at 50% 50%, #2acbd5 31.25%, #151616 100%);
-  gap: 4vw;
-  overflow-x: auto;
-  width: auto;
-  height: auto;
-  flex-shrink: 0;
-  margin: auto;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  background-color: rgb(19, 19, 18);
-  padding-bottom: 20px; 
+.filter-buttons button {
+  margin: 5px; 
 }
 
 
-.movie-card {
-  position: relative; 
-  margin: 20px;
-  text-align: center;
-}
-
-
-.movie-image {
-  width: 200px; 
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
- 
-}
-
-.movie-button {
+.filter-buttons button {
   padding: 5px 30px;
   background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
   color: black;
@@ -108,10 +85,19 @@ h2 {
   margin-top: 20px;
   z-index: 1; 
 }
+.filter-buttons button:hover {
+  background-color: yellow; 
+}
 
-.movie-button:hover {
-  background: #e7d90c; 
-  border: 1px solid black;
+
+@media screen and (max-width: 768px) {
+  .filter-buttons {
+    flex-direction: column; 
+  }
+
+  .filter-buttons button {
+    margin: 5px auto; 
+  }
 }
 
 @media only screen and (min-width: 240px) and (max-width: 900px) and (min-resolution: 2dppx) {
@@ -130,7 +116,7 @@ h3 {
   cursor: pointer;
   margin-top: 30px;
   margin-bottom: 10px;
-  border-top: 1px solid aqua;
+  border-bottom: 1px solid aqua;
 }
 
 

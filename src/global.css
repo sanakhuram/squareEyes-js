@@ -14,8 +14,6 @@
   }
 }
 
-
-
 body {
   color: rgb(127, 249, 255);
   background-color: black;
@@ -300,7 +298,17 @@ button.add-to-cart-button{
   padding: 5px 20px;
 }
 
+.terms-privacy a {
+ font-size: 15px;
 }
+.terms-privacy p {
+font-weight: 100;
+}
+.footer-section img{
+  height: 60px;
+}
+}
+
 .hidden {
   display: none;
 }
