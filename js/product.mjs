@@ -66,6 +66,11 @@ function addToCartClicked(event) {
   const { movieId, title, image, price } = event.target.dataset;
   addToCart(movieId, title, image, price);
   updateCartCount();
+
+  event.target.textContent = "Item Added";
+  setTimeout(() => {
+    event.target.textContent = "Add to Cart";
+  }, 1000);
 }
 
 function addToCart(movieId, title, image, price) {

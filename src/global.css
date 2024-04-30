@@ -245,6 +245,7 @@ a{
   transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 60px;
+  color: yellow;
 }
 
 #banner {
@@ -378,5 +379,6 @@ font-weight: 100;
 }
 .terms-privacy a:hover{
 color: yellow;
-
 }
+
+

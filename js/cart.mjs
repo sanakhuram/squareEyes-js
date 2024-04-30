@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             loadingIndicator.style.display = 'none';
         }, 1000);
+        
     }
 
     document.addEventListener('click', (event) => {
