@@ -110,25 +110,3 @@ document.getElementById("filter-genre-horror").addEventListener("click", () => {
 updateCartCount();
  
 
-
-
-
-// Function to update the cart badge count
-function updateCartBadge(count) {
-  const cartBadge = document.getElementById('cart-badge');
-  cartBadge.textContent = count;
-}
-
-// Function to add item to cart
-function addToCart(movieId, title, image, price) {
-  // Your existing addToCart logic here
-  
-  // Update the cart badge count
-  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  const currentCount = cartItems.reduce((total, item) => total + item.quantity, 0);
-  updateCartBadge(currentCount);
-}
-
-// Usage Example:
-// Call addToCart function when adding an item to the cart
-// addToCart(movieId, title, image, price);
