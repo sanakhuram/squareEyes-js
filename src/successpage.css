@@ -83,7 +83,7 @@ color:yellow;
 .heading-over-image1 {
   overflow: hidden; 
   white-space: nowrap; 
-  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite; 
+  animation: typing 5s steps(60, end), blink-caret 0.9s step-end infinite; 
  
   position: absolute;
   top: 30%;
