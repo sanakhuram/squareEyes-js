@@ -1,4 +1,6 @@
+
 import { URL } from "./constants.mjs";
+import { showLoadingIndicator, hideLoadingIndicator } from "./utils.mjs";
 
 const url = document.location;
 const search = url.search;
@@ -25,9 +27,12 @@ async function renderSingleMovie() {
   try {
     const id = params.get("id");
     const movieDetails = document.getElementById("movie-details");
-    const singleData = await fetchSingleMovie(id);
+    showLoadingIndicator();
+    setTimeout(async () => {
+      try {
+        const singleData = await fetchSingleMovie(id);
 
-    movieDetails.innerHTML = `
+        movieDetails.innerHTML = `
             <div class="movie-image">
                 <img src="${singleData.image}" alt="${singleData.title}">
             </div>
@@ -38,21 +43,22 @@ async function renderSingleMovie() {
                 <p><strong>Release Date:</strong> ${singleData.releaseDate}</p>
                 <p><strong>Rating:</strong> ${singleData.rating}</p>
                 <p><strong>Price:</strong> $${singleData.price.toFixed(2)}</p>
-                <p><strong style=color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(
-                  2
-                )}</p>
-                <button class="add-to-cart-button" data-movie-id="${
-                  singleData.id
-                }" data-title="${singleData.title}" data-image="${
-      singleData.image
-    }" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
+                <p><strong style="color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(2)}</p>
+                <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
             </div>
         `;
 
-    const addToCartButton = document.querySelector(".add-to-cart-button");
-    addToCartButton.addEventListener("click", addToCartClicked);
+        const addToCartButton = document.querySelector(".add-to-cart-button");
+        addToCartButton.addEventListener("click", addToCartClicked);
+      } catch (error) {
+        console.error(error);
+      }
+
+      hideLoadingIndicator();
+    }, 1000);
   } catch (error) {
     console.error(error);
+    hideLoadingIndicator();
   }
 }
 
@@ -76,10 +82,7 @@ function addToCart(movieId, title, image, price) {
 function updateCartCount() {
   const cartCountElement = document.querySelector(".cart-count");
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  const currentCount = cartItems.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
+  const currentCount = cartItems.reduce((total, item) => total + item.quantity, 0);
   cartCountElement.textContent = `CART(${currentCount})`;
 
   const dropdownContent = document.querySelector(".dropdown-content");

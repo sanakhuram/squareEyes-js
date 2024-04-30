@@ -316,6 +316,8 @@ font-weight: 100;
 
 .loading{
   text-align: center;
+  font-weight: bold;
+  padding: 20px;
 }
 .loading {
   display: none;

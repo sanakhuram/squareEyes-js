@@ -47,31 +47,39 @@ document.addEventListener("DOMContentLoaded", () => {
 const filterMoviesByGenre = (genre) => {
   const moviesContainer = document.querySelector(".movies");
   const heading = document.querySelector(".genre-heading");
+  showLoadingIndicator();
+  
+ 
 
-  moviesContainer.innerHTML = "";
-  heading.textContent = "";
-  movies.forEach((movie) => {
-    if (genre === "all" || movie.genre.toLowerCase() === genre) {
-      moviesContainer.innerHTML += `
-      <div class="movie" data-movie-id="${movie.id}">
-        <h2>${movie.title}</h2>
-        <p>${movie.description}</p>
-        <a href="./product/index.html?id=${movie.id}">
-          <img src="${movie.image}" alt="${movie.title}">
-        </a>
-        <div class="movie-price">$${movie.price.toFixed(2)}</div>
-      </div>
-      `;
+  setTimeout(() => {
+    moviesContainer.innerHTML = "";
+    heading.textContent = "";
+    movies.forEach((movie) => {
+      if (genre === "all" || movie.genre.toLowerCase() === genre) {
+        moviesContainer.innerHTML += `
+        <div class="movie" data-movie-id="${movie.id}">
+          <h2>${movie.title}</h2>
+          <p>${movie.description}</p>
+          <a href="./product/index.html?id=${movie.id}">
+            <img src="${movie.image}" alt="${movie.title}">
+          </a>
+          <div class="movie-price">$${movie.price.toFixed(2)}</div>
+        </div>
+        `;
+      }
+    });
+
+   
+    hideLoadingIndicator();
+
+    if (genre === "all") {
+      heading.textContent = "All Movies";
+    } else {
+      heading.textContent = `${
+        genre.charAt(0).toUpperCase() + genre.slice(1)
+      }  Movies `;
     }
-  });
-
-  if (genre === "all") {
-    heading.textContent = "All Movies";
-  } else {
-    heading.textContent = `${
-      genre.charAt(0).toUpperCase() + genre.slice(1)
-    }  Movies `;
-  }
+  }, 1000); 
 };
 
 document.getElementById("filter-genre-all").addEventListener("click", () => {
