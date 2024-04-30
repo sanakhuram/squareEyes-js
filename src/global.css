@@ -16,12 +16,13 @@
 body {
   color: rgb(127, 249, 255);
   background-color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   margin: 0;
 }
-html {
-  scroll-behavior: smooth;
+button{
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-wrapper {
@@ -39,6 +40,9 @@ html {
   top: 10px;
   position: absolute;
   right: 10px;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .links ul {
