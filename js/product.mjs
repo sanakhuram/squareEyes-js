@@ -71,6 +71,13 @@ function addToCartClicked(event) {
   setTimeout(() => {
     event.target.textContent = "Add to Cart";
   }, 1000);
+
+ 
+  const menuToggle = document.getElementById('menu-toggle');
+  menuToggle.click();
+  setTimeout(() => {
+    menuToggle.click();
+  }, 1000);
 }
 
 function addToCart(movieId, title, image, price) {
@@ -109,3 +116,14 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSingleMovie();
   updateCartCount();
 });
+
+function toggleMenu() {
+  const menu = document.querySelector('.dropdown-content');
+  menu.classList.add('show');
+  setTimeout(() => {
+    menu.classList.remove('show');
+  }, 2000);
+}
+
+
+

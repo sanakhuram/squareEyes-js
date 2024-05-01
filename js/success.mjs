@@ -7,11 +7,3 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(displayMessage, 1000);
 });
   
-document.addEventListener('DOMContentLoaded', function() {
-  const genreToggle = document.getElementById('genre-toggle');
-  const genreOptions = document.getElementById('genre-options');
-
-  genreToggle.addEventListener('click', function() {
-    genreOptions.classList.toggle('hidden');
-  });
-});

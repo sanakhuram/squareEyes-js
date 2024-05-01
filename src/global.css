@@ -7,11 +7,7 @@
 @import url("global.css");
 
 /* Additional styling for responsiveness */
-@media only screen and (min-width: 301px) and (max-width: 600px) {
-  .links {
-    display: none;
-  }
-}
+
 
 body {
   color: rgb(127, 249, 255);
@@ -382,3 +378,32 @@ color: yellow;
 }
 
 
+.basket-icon {
+  display: none;
+}
+.basket-icon img{
+  height: 30px;
+  width: 30px;
+z-index: 1000;
+margin-top: 20%;
+}
+span#basket-count-icon {
+  font-size: 8px;
+  background-color: red;
+  border-radius: 80px;
+  padding: 2px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 900px) and (min-resolution: 2dppx) {
+  .basket-icon {
+      display: inline;
+  }
+  .links ul li {
+      display: none;
+  }
+  h2{
+    font-size: 20px;
+    padding: 20px;
+  }
+}
