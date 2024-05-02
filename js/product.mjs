@@ -1,4 +1,3 @@
-
 import { URL } from "./constants.mjs";
 import { showLoadingIndicator, hideLoadingIndicator } from "./utils.mjs";
 
@@ -43,8 +42,14 @@ async function renderSingleMovie() {
                 <p><strong>Release Date:</strong> ${singleData.releaseDate}</p>
                 <p><strong>Rating:</strong> ${singleData.rating}</p>
                 <p><strong>Price:</strong> $${singleData.price.toFixed(2)}</p>
-                <p><strong style="color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(2)}</p>
-                <button class="add-to-cart-button" data-movie-id="${singleData.id}" data-title="${singleData.title}" data-image="${singleData.image}" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
+                <p><strong style="color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(
+                  2
+                )}</p>
+                <button class="add-to-cart-button" data-movie-id="${
+                  singleData.id
+                }" data-title="${singleData.title}" data-image="${
+          singleData.image
+        }" data-price="${singleData.price.toFixed(2)}">Add to Cart</button>
             </div>
         `;
 
@@ -72,8 +77,7 @@ function addToCartClicked(event) {
     event.target.textContent = "Add to Cart";
   }, 1000);
 
- 
-  const menuToggle = document.getElementById('menu-toggle');
+  const menuToggle = document.getElementById("menu-toggle");
   menuToggle.click();
   setTimeout(() => {
     menuToggle.click();
@@ -94,7 +98,10 @@ function addToCart(movieId, title, image, price) {
 function updateCartCount() {
   const cartCountElement = document.querySelector(".cart-count");
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  const currentCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const currentCount = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
   cartCountElement.textContent = `CART(${currentCount})`;
 
   const dropdownContent = document.querySelector(".dropdown-content");
@@ -118,12 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleMenu() {
-  const menu = document.querySelector('.dropdown-content');
-  menu.classList.add('show');
+  const menu = document.querySelector(".dropdown-content");
+  menu.classList.add("show");
   setTimeout(() => {
-    menu.classList.remove('show');
+    menu.classList.remove("show");
   }, 2000);
 }
-
-
-
