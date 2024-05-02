@@ -29,6 +29,7 @@ button{
   border-radius: 40px;
   border: 2px solid #2d5754;
   background: radial-gradient(50% 50% at 50% 50%, #2acbd5 31.25%, #151616 100%);
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
 }
 
 .links {
@@ -142,6 +143,7 @@ color: yellow;
   cursor: pointer;
   font-size: medium;
   transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
 }
 .subscribe-button:hover {
   background:yellow;

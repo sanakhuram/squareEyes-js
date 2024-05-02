@@ -82,7 +82,7 @@ h2 {
   margin-top: 20px;
   z-index: 1; 
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
 }
 .filter-buttons button:hover {
   background: radial-gradient(50% 50% at 50% 50%, rgb(208, 255, 0) 70%, #070707 120%); 

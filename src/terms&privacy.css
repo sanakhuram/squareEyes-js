@@ -62,16 +62,19 @@ body {
   }
   
   form input[type="submit"] {
-    background-color:aqua;
+    background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
     color:black;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
   }
   
   form input[type="submit"]:hover {
-    background-color: #555;
+    background: #d5e40a;
+    background: radial-gradient(50% 50% at 50% 50%, yellow 60%, black 150%);
+    
   }
   .text p{
     padding: 20px;

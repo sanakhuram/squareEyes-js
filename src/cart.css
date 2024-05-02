@@ -11,47 +11,30 @@
 
 
 .button {
-  background-color: #0fd4e2;
-  color: black;
-  border-radius: 20px;
-  padding: 5px 25px;
-  border: solid 1px white;
-  cursor: pointer;
-  margin-bottom: 50px;
-  margin-top: 40px;
-  text-align: center;
+  display: inline-block;
+  padding: 10px 40px;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
+  color: #070707;
   font-weight: bold;
-  display: block;
-}
-.Shopping-Cart-button {
-  background-color: rgba(0, 255, 255, 0.863);
-  color: black;
-  border-radius: 0px;
-  padding: 7px 80px;
-  border: solid 2px rgb(114, 130, 133);
+  border-radius: 5px;
+  border: 1px solid rgb(29, 29, 28);
   cursor: pointer;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: x-large;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
+  margin: 10px;
 }
 
-.items-Button {
-  display: block;
-  text-align: center;
-  padding: 4px 20px;
-  border-radius: 10px;
-  margin-left: 70%;
-  position: absolute;
+.button:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #070707 60%, aqua 150%);
+  color: white;
 }
+
+
 h2 {
   text-align: center;
   color: white;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 h3,
 h4 {
@@ -117,7 +100,7 @@ h6 {
 
 
 .total{
-  margin-bottom: 30px;
+  margin: 30px;
   text-align: center;
   font-size: 20px;
 }
@@ -171,22 +154,22 @@ ul {
 }
 
 .checkout-button {
-  background-color:aqua;
-  color: rgb(15, 15, 15);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 40px;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
+  color: #070707;
   font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(29, 29, 28);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
   margin: 10px;
 }
-
 .checkout-button:hover {
-  background-color: rgb(255, 0, 200);
+  background: radial-gradient(50% 50% at 50% 50%, #070707 60%, aqua 150%);
+  color: white;
 }
-
 
 
 

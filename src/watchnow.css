@@ -18,21 +18,22 @@
 
 
 
-.add-to-cart-button
-{
-  background-color: #2acbd5;
-  color: black;
-  padding: 8px 60px;
-  border: solid 1px white;
-  border-radius: 20px;
+.add-to-cart-button{
+  display: inline-block;
+  padding: 10px 30px;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
+  color: #070707;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(29, 29, 28);
   cursor: pointer;
-  margin-bottom: 40px;
-  text-decoration: none;
-  font-size: medium;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
 }
 
 .add-to-cart-button:hover {
-  background-color: #ccb807;
+  background: radial-gradient(50% 50% at 50% 50%, #070707 60%, aqua 150%);
+  color: white;
 }
 
 
@@ -105,16 +106,19 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color:aqua;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
   color:black;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
 }
 
 form input[type="submit"]:hover {
-  background-color: #555;
+  background: #d5e40a;
+  background: radial-gradient(50% 50% at 50% 50%, yellow 60%, black 150%);
+  
 }
 .text p{
   padding: 20px;
@@ -139,4 +143,53 @@ h1{
 h3{
   font-size: 12px;
 }
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.go-to-cart {
+  display: inline-block;
+  padding: 10px 40px;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
+  color: #070707;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(29, 29, 28);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
+  margin: 10px;
+}
+
+.go-to-cart:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #070707 60%, aqua 150%);
+  color: white;
+}
+
+.continue-shopping {
+  display: inline-block;
+  padding: 10px 40px;
+  background: radial-gradient(50% 50% at 50% 50%, aqua 60%, #070707 150%);
+  color: #070707;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(29, 29, 28);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(241, 186, 4, 0.863);
+  margin: 10px;
+}
+
+.continue-shopping:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #070707 60%, aqua 150%);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
