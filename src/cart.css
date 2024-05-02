@@ -171,7 +171,9 @@ ul {
   color: white;
 }
 
-
+strong:hover{
+  color :yellow;
+}
 
 
 
