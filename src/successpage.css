@@ -19,12 +19,13 @@
 
 .checkbox-image {
   height: 60px;
-  background: url(../assets/check-mark.png) center/contain no-repeat;
+  background: url(../assets/checkmark.png) center/contain no-repeat;
   margin-bottom: 20px;
   opacity: 1;
   visibility: hidden;
   animation: appearCheckmark 1s infinite alternate;
   animation-delay: 2s; 
+  
 }
 
 @keyframes appearCheckmark {
