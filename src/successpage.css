@@ -15,8 +15,6 @@
   border-bottom: 2px solid #0af3f3;
 }
 
-
-
 .checkbox-image {
   height: 60px;
   background: url(../assets/checkmark.png) center/contain no-repeat;
@@ -25,7 +23,6 @@
   visibility: hidden;
   animation: appearCheckmark 1s infinite alternate;
   animation-delay: 2s; 
-  
 }
 
 @keyframes appearCheckmark {

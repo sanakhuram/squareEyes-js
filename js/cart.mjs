@@ -70,6 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else if (event.target === checkoutButton) {
             alert('Your order is being processed.');
+            localStorage.removeItem('cart');
+            showChart([]);
         }
     });
 });
