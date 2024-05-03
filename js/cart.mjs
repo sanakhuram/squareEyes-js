@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         <img src="${cartElement.image}" alt="${cartElement.title}">
                         <div class="quantity-buttons">
-                            <button class="remove-button" data-product="${cartElement.id}">Remove</button>
-                            <button class="decrement-button" data-product="${cartElement.id}">-</button>
+                            <button class="remove-button" data-movie="${cartElement.id}">Remove</button>
+                            <button class="decrement-button" data-movie="${cartElement.id}">-</button>
                             <span>${cartElement.quantity}</span>
-                            <button class="increment-button" data-product="${cartElement.id}">+</button>
+                            <button class="increment-button" data-movie="${cartElement.id}">+</button>
                         </div>
                     </div>
                     `;
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', (event) => {
         if (event.target.classList.contains('increment-button')) {
-            const movieId = event.target.dataset.product;
+            const movieId = event.target.dataset.movie;
             const cartItem = cartArray.find(item => item.id === movieId);
             if (cartItem) {
                 cartItem.quantity++;
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('cart', JSON.stringify(cartArray));
             }
         } else if (event.target.classList.contains('decrement-button')) {
-            const movieId = event.target.dataset.product;
+            const movieId = event.target.dataset.movie;
             const cartItem = cartArray.find(item => item.id === movieId);
             if (cartItem && cartItem.quantity > 1) {
                 cartItem.quantity--;
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('cart', JSON.stringify(cartArray));
             }
         } else if (event.target.classList.contains('remove-button')) {
-            const movieId = event.target.dataset.product;
+            const movieId = event.target.dataset.movie;
             const cartItemIndex = cartArray.findIndex(item => item.id === movieId);
             if (cartItemIndex !== -1) {
                 cartArray.splice(cartItemIndex, 1);
