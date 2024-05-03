@@ -367,12 +367,12 @@ font-weight: 100;
 
 .terms-privacy p {
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
+  color: lightblue;
 }
 .terms-privacy a{
   color: #fdffff;
   font-weight: bold;
-
 }
 .terms-privacy a:hover{
 color: yellow;
