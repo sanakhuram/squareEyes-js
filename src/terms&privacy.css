@@ -79,6 +79,13 @@ body {
   .text p{
     padding: 20px;
   }
+
+  
+@media only screen and (min-width: 240px) and (max-width: 900px) and (min-resolution: 2dppx){
+   p{
+    font-size: 15px;
+  }
+}
   .image-container {
     position: relative;
     max-width: 100%;
