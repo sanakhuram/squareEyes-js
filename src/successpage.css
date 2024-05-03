@@ -19,7 +19,7 @@
 
 .checkbox-image {
   height: 60px;
-  background: url(https://th.bing.com/th/id/R.14f7b7011055f57e0db2aa259fb98f85?rik=k%2fJ1iAKmzI4ztg&pid=ImgRaw&r=0) center/contain no-repeat;
+  background: url(../assets/check-mark.png) center/contain no-repeat;
   margin-bottom: 20px;
   opacity: 1;
   visibility: hidden;
