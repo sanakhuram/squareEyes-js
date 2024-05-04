@@ -124,10 +124,3 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
 });
 
-function toggleMenu() {
-  const menu = document.querySelector(".dropdown-content");
-  menu.classList.add("show");
-  setTimeout(() => {
-    menu.classList.remove("show");
-  }, 2000);
-}
