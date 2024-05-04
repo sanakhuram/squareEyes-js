@@ -49,7 +49,7 @@ window.addEventListener("storage", (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
     showLoadingIndicator();
-    setTimeout(displayMovies, 2000);
+    setTimeout(displayMovies, 1000);
 });
 
 const filterMoviesByGenre = (genre) => {
@@ -115,3 +115,5 @@ updateBasketCountInView(basketCount);
 updateBasketCountFromLocalStorage();
 
 clearBasketCountInLocalStorage();
+
+
