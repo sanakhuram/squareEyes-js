@@ -39,7 +39,7 @@ async function renderSingleMovie() {
                 <h2>${singleData.title}</h2>
                 <p>${singleData.description}</p>
                 <p><strong>Genre:</strong> ${singleData.genre}</p>
-                <p><strong>Release Date:</strong> ${singleData.releaseDate}</p>
+                <p><strong>Release Date:</strong> ${singleData.released}</p>
                 <p><strong>Rating:</strong> ${singleData.rating}</p>
                 <p><strong>Price:</strong> $${singleData.price.toFixed(2)}</p>
                 <p><strong style="color:red;">Discounted Price:</strong> $${singleData.discountedPrice.toFixed(
