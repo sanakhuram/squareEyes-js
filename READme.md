@@ -83,9 +83,10 @@ Feel free to reach out with any questions, suggestions, or feedback:
 
 - [🔗 LinkedIn](https://www.linkedin.com/in/sana-khuram-157ba02b7/)
 
+
 ## 📜 License
 
-This project is licensed under the MIT License. For more information, refer to the [LICENSE](LICENSE.md) file.
+This project is licensed under the MIT License.
 
 ## 🙌 Acknowledgments
 
