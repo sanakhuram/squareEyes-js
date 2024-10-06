@@ -108,7 +108,7 @@ function updateCartCount() {
     .map(
       (item) => `
         <div class="cart-item">
-            <img src="${item.image}" alt="${item.title}" style="width: 50px; border-radius: 10px;">
+            <img src="${item.image}" alt="${item.title}" style="width: 20px; border-radius: 10px;">
             <span class="cart-item-details">
                 <span class="cart-item-title">${item.title}</span> - <span class="cart-item-quantity">${item.quantity}</span>
             </span>
