@@ -58,24 +58,6 @@ npx serve
 
 You can view the site by simply opening the `index.html` file or serving it using the command mentioned above for a more professional environment. Users will be able to browse movies, select genres, add items to their cart, and proceed to checkout.
 
-## 🌟 Contributing
-
-Contributions are welcome! If you'd like to contribute to **Square Eyes**:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix:
-   ```bash
-   git checkout -b feature-branch
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add new feature or fix"
-   ```
-4. Push the changes to GitHub:
-   ```bash
-   git push origin feature-branch
-   ```
-5. Open a pull request for review and merging.
 
 ## 📞 Contact
 
