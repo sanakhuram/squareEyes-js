@@ -1,4 +1,4 @@
-# 🎬 Square Eyes - Responsive E-Commerce Movie Website 🍿
+# 🎬 Square Eyes 🍿
 
 ![Square Eyes](https://i.postimg.cc/3ww4snxd/Screenshot-2024-10-01-222731.png)
 
