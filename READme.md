@@ -1,6 +1,7 @@
 # 🎬 Square Eyes 🍿
 
-![Square Eyes](https://github.com/user-attachments/assets/ae84fd81-189d-424d-a8f2-d53f7b41276c)
+![Square Eyes](https://github.com/user-attachments/assets/d4af34de-ca51-433b-9402-06c0a8f8b66c)
+
 
 
 Welcome to **Square Eyes**, a responsive e-commerce website dedicated to movie enthusiasts! This project integrates with the Noroff API to offer a wide selection of movies from different genres. The goal is to create an accessible, functional, and responsive website where users can explore movies, add them to their cart, and proceed to checkout. 📽️✨
