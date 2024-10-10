@@ -1,6 +1,7 @@
 # 🎬 Square Eyes 🍿
 
-![Square Eyes](https://github.com/user-attachments/assets/d4af34de-ca51-433b-9402-06c0a8f8b66c)
+![Square Eyes](https://github.com/user-attachments/assets/5c098fb4-9d50-41df-ac7a-b697fca97994)
+
 
 
 
