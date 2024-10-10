@@ -20,7 +20,7 @@ This project delivers a modern e-commerce platform for the **Square Eyes** clien
 - **E-Commerce Functionality:** Users can add movies to their cart and proceed to checkout without any hassle.
   
 ## 🛠️ Built With
-
+- **FIGMA:** Designing for UX/UI accessibility.
 - **HTML5:** Semantic structure to enhance accessibility.
 - **CSS3:** Responsive design using Flexbox and Grid to ensure a smooth experience across all screen sizes.
 - **JavaScript:** For interactive features like adding items to the cart and connecting to the Noroff API.
@@ -71,4 +71,15 @@ Feel free to reach out with any questions, suggestions, or feedback:
 - Special thanks to [Noroff Dev API](https://noroff.dev) for providing the movie data used in this project. 🍿🎥
 - The WAVE Web Accessibility Evaluation Tool was instrumental in ensuring WCAG compliance and improving accessibility. ♿
 
-You can check out the live project on [GitHub Pages](https://sanakhuram.github.io/squareEyes-js/). 👀
+## 🔗 View Demo 👀
+
+Check out the live demo of the project:
+
+- **[View Demo on GitHub Pages](https://sanakhuram.github.io/squareEyes-js/)**
+
+## 🎨 View Figma Design
+
+See the original Figma file used to design the project:
+
+- **[View Figma File](https://www.figma.com/design/wsuRfl0hV1O5CNZQUtr6hu/Square-Eyes?node-id=166-2097&node-type=canvas&t=Kjo9BgnLQWioSnNJ-0)**
+
